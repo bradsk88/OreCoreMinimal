@@ -1,0 +1,10 @@
+/.gradle
+/.settings
+/build
+/.classpath
+/.project
+/bin/
+/crash-reports
+/logs
+/saves
+/usernamecache.json

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "OreCoreMin",
+  "name": "OreCore Minimal",
+  "description": "Adds Copper, Tin, Aluminum.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["bradsk88"],
+  "credits": "Brad Johnson (bradsk88)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
