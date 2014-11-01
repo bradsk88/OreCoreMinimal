@@ -1,0 +1,40 @@
+#Generated Com o Google Translate
+
+itemGroup.tabOreCore=OreNúcleo
+
+tile.Bauxite.Ore.name=Minério de bauxita
+tile.Bauxite.Gravel.name=solta Bauxita Minério
+item.Aluminum.Dust.name=Alumínio Poeira
+item.Aluminum.Nugget.name=Alumínio Nugget
+item.Aluminum.Ingot.name=lingote de alumínio
+tile.Aluminum.Block.name=bloco de alumínio
+
+tile.Copper.name=minério de cobre
+tile.Inferior.Copper.name=Inferior minério de cobre
+tile.Copper.Gravel.name=Copper Ore Gravel
+item.Copper.Dust.name=Cobre Poeira
+item.Copper.Nugget.name=Cobre Nugget
+item.Copper.Ingot.name=cobre lingote
+tile.Copper.Block.name=Bloco de cobre
+
+item.Copper.II.Carbonate.Dust.name=cobre II Carbonato
+item.Copper.II.Carbonate.Nugget.name=cobre II Carbonato Nugget
+item.Copper.II.Carbonate.Ingot.name=cobre II Carbonato de lingote
+tile.Copper.II.Carbonate.Block.name=Bloco de cobre II Carbonato
+
+tile.Inferior.Gold.name=Inferior do minério do ouro
+tile.Gold.Gravel.name=Ouro Gravel Ore
+item.Gold.Dust.name=Gold Dust
+
+item.Iron.Dust.name=Ferro Poeira
+item.Iron.Nugget.name=Ferro Nugget
+tile.Inferior.Iron.name=Inferior Minério de Ferro
+tile.Iron.Gravel.name=Ferro Gravel Ore
+
+tile.Tin.name=Tin Ore
+tile.Inferior.Tin.name=Inferior Tin Ore
+tile.Tin.Gravel.name=Tin Ore Gravel
+item.Tin.Ingot.name=Tin lingote
+item.Tin.Nugget.name=Tin Nugget
+item.Tin.Dust.name=Tin Poeira
+tile.Tin.Block.name=Bloco de Tin

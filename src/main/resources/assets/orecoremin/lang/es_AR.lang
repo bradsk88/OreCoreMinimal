@@ -1,0 +1,40 @@
+#Generado con Google Translate
+
+itemGroup.tabOreCore=OreCore
+
+tile.Bauxite.Ore.name=Bauxita mineral
+tile.Bauxite.Gravel.name=Loose Bauxita mineral
+item.Aluminum.Dust.name=Aluminio Polvo
+item.Aluminum.Nugget.name=Aluminio Nugget
+item.Aluminum.Ingot.name=Aluminio Lingote
+tile.Aluminum.Block.name=bloque de aluminio
+
+tile.Copper.name=mineral de cobre
+tile.Inferior.Copper.name=Inferior mineral de cobre
+tile.Copper.Gravel.name=Cobre Grava Ore
+item.Copper.Dust.name=Cobre Polvo
+item.Copper.Nugget.name=Cobre Nugget
+item.Copper.Ingot.name=Cobre Lingote
+tile.Copper.Block.name=Bloque de cobre
+
+item.Copper.II.Carbonate.Dust.name=Cobre II Carbonato
+item.Copper.II.Carbonate.Nugget.name=II Cobre Carbonato Nugget
+item.Copper.II.Carbonate.Ingot.name=II Cobre Carbonato Lingote
+tile.Copper.II.Carbonate.Block.name=Bloque de cobre II Carbonato
+
+tile.Inferior.Gold.name=Inferior del mineral del oro
+tile.Gold.Gravel.name=Oro Grava Ore
+item.Gold.Dust.name=polvo de oro
+
+item.Iron.Dust.name=Hierro Polvo
+item.Iron.Nugget.name=Hierro Nugget
+tile.Inferior.Iron.name=Inferior Mineral de Hierro
+tile.Iron.Gravel.name=Hierro Grava Ore
+
+tile.Tin.name=Estaño Mineral
+tile.Inferior.Tin.name=Inferior Estaño Mineral
+tile.Tin.Gravel.name=Estaño Grava Ore
+item.Tin.Ingot.name=Estaño Lingote
+item.Tin.Nugget.name=Estaño Nugget
+item.Tin.Dust.name=Estaño Polvo
+tile.Tin.Block.name=Bloque de Estaño

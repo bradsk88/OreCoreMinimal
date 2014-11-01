@@ -1,0 +1,40 @@
+#Generated Kanssa Google Translate
+
+itemGroup.tabOreCore=OreCore
+
+tile.Bauxite.Ore.name=bauksiittimalmista
+tile.Bauxite.Gravel.name=Loose bauksiittimalmista
+item.Aluminum.Dust.name=alumiinipölyn
+item.Aluminum.Nugget.name=Alumiini Nugget
+item.Aluminum.Ingot.name=alumiiniharkon
+tile.Aluminum.Block.name=alumiinikappaleesta
+
+tile.Copper.name=Kupari Ore
+tile.Inferior.Copper.name=Huonompi kuparimalmista
+tile.Copper.Gravel.name=Kupari Sora Ore
+item.Copper.Dust.name=Copper Dust
+item.Copper.Nugget.name=Copper Nugget
+item.Copper.Ingot.name=Copper Harkko
+tile.Copper.Block.name=Block Copper
+
+item.Copper.II.Carbonate.Dust.name=Copper II Karbonaatti
+item.Copper.II.Carbonate.Nugget.name=Copper II Karbonaatti Nugget
+item.Copper.II.Carbonate.Ingot.name=Copper II Karbonaatti Harkkojen
+tile.Copper.II.Carbonate.Block.name=Block Copper II Karbonaatti
+
+tile.Inferior.Gold.name=Huonompi Kultamalmi
+tile.Gold.Gravel.name=Gold Sora Ore
+item.Gold.Dust.name=Gold Dust
+
+item.Iron.Dust.name=rautapölyä
+item.Iron.Nugget.name=Iron Nugget
+tile.Inferior.Iron.name=Huonompi Iron Ore
+tile.Iron.Gravel.name=Iron Sora Ore
+
+tile.Tin.name=Tin Ore
+tile.Inferior.Tin.name=Huonompi Tin Ore
+tile.Tin.Gravel.name=Tin Gravel Ore
+item.Tin.Ingot.name=Tin Harkko
+item.Tin.Nugget.name=Tin Nugget
+item.Tin.Dust.name=Tin Dust
+tile.Tin.Block.name=Block Tin

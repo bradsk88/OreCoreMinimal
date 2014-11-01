@@ -1,0 +1,40 @@
+#Generated with Google Translate
+
+itemGroup.tabOreCore=OreCore
+
+tile.Bauxite.Ore.name=Bauxite Ore
+tile.Bauxite.Gravel.name=Loose Bauxite Ore
+item.Aluminum.Dust.name=Aluminum Dust
+item.Aluminum.Nugget.name=Aluminum Nugget
+item.Aluminum.Ingot.name=Aluminum Ingot
+tile.Aluminum.Block.name=Block of Aluminum
+
+tile.Copper.name=Copper Ore
+tile.Inferior.Copper.name=Inferior Copper Ore
+tile.Copper.Gravel.name=Copper Gravel Ore
+item.Copper.Dust.name=Copper Dust
+item.Copper.Nugget.name=Copper Nugget
+item.Copper.Ingot.name=Copper Ingot
+tile.Copper.Block.name=Block of Copper
+
+item.Copper.II.Carbonate.Dust.name=Copper II Carbonate
+item.Copper.II.Carbonate.Nugget.name=Copper II Carbonate Nugget
+item.Copper.II.Carbonate.Ingot.name=Copper II Carbonate Ingot
+tile.Copper.II.Carbonate.Block.name=Block of Copper II Carbonate
+
+tile.Inferior.Gold.name=Inferior Gold Ore
+tile.Gold.Gravel.name=Gold Gravel Ore
+item.Gold.Dust.name=Gold Dust
+
+item.Iron.Dust.name=Iron Dust
+item.Iron.Nugget.name=Iron Nugget
+tile.Inferior.Iron.name=Inferior Iron Ore
+tile.Iron.Gravel.name=Iron Gravel Ore
+
+tile.Tin.name=Tin Ore
+tile.Inferior.Tin.name=Inferior Tin Ore
+tile.Tin.Gravel.name=Tin Gravel Ore
+item.Tin.Ingot.name=Tin Ingot
+item.Tin.Nugget.name=Tin Nugget
+item.Tin.Dust.name=Tin Dust
+tile.Tin.Block.name=Block of Tin

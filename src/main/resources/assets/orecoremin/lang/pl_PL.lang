@@ -1,0 +1,40 @@
+#Generated Z Google Translate
+
+itemGroup.tabOreCore=RdzeńRud
+
+tile.Bauxite.Ore.name=rudy boksytu
+tile.Bauxite.Gravel.name=Loose rudy boksytu
+item.Aluminum.Dust.name=aluminium Pył
+item.Aluminum.Nugget.name=aluminium Nugget
+item.Aluminum.Ingot.name=wlewek
+tile.Aluminum.Block.name=bloku aluminium
+
+tile.Copper.name=Rud Miedzi
+tile.Inferior.Copper.name=Inferior Rud Miedzi
+tile.Copper.Gravel.name=rudy miedzi Żwir
+item.Copper.Dust.name=Pył miedziany
+item.Copper.Nugget.name=Copper Nugget
+item.Copper.Ingot.name=wlewki miedzi
+tile.Copper.Block.name=Blok miedzi
+
+item.Copper.II.Carbonate.Dust.name=węglan miedzi II
+item.Copper.II.Carbonate.Nugget.name=Copper Nugget węglanowej II
+item.Copper.II.Carbonate.Ingot.name=miedzi wlewki węglanowej II
+tile.Copper.II.Carbonate.Block.name=Zablokuj węglanu miedzi II
+
+tile.Inferior.Gold.name=Inferior rudy złota
+tile.Gold.Gravel.name=rudy złota Żwir
+item.Gold.Dust.name=Gold Dust
+
+item.Iron.Dust.name=Żelazny Pył
+item.Iron.Nugget.name=Żelazny Nugget
+tile.Inferior.Iron.name=Inferior rudy żelaza
+tile.Iron.Gravel.name=rudy żelaza Żwir
+
+tile.Tin.name=Tin Ore
+tile.Inferior.Tin.name=Inferior Tin Ore
+tile.Tin.Gravel.name=rudy cyny Żwir
+item.Tin.Ingot.name=Tin Wlewki
+item.Tin.Nugget.name=Tin Nugget
+item.Tin.Dust.name=Tin Pył
+tile.Tin.Block.name=Blok Tin

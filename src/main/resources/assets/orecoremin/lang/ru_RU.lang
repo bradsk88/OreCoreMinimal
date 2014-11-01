@@ -1,0 +1,40 @@
+#Generated С Google Translate
+
+itemGroup.tabOreCore=рудаЯдро
+
+tile.Bauxite.Ore.name=бокситов
+tile.Bauxite.Gravel.name=Свободный бокситов
+item.Aluminum.Dust.name=алюминиевой пыли
+item.Aluminum.Nugget.name=Алюминий Самородок
+item.Aluminum.Ingot.name=алюминиевого слитка
+tile.Aluminum.Block.name=куска алюминия
+
+tile.Copper.name=Медная руда
+tile.Inferior.Copper.name=Нижняя Медная руда
+tile.Copper.Gravel.name=Медь Гравий руды
+item.Copper.Dust.name=Copper пыли
+item.Copper.Nugget.name=Copper Самородок
+item.Copper.Ingot.name=Медный слиток
+tile.Copper.Block.name=Блок меди
+
+item.Copper.II.Carbonate.Dust.name=Copper II карбонат
+item.Copper.II.Carbonate.Nugget.name=Copper II Карбонатная Самородок
+item.Copper.II.Carbonate.Ingot.name=Copper II Карбонатная слиток
+tile.Copper.II.Carbonate.Block.name=Блок Copper II карбоната
+
+tile.Inferior.Gold.name=Нижняя Золотая руда
+tile.Gold.Gravel.name=Золото Гравий руды
+item.Gold.Dust.name=Gold Dust
+
+item.Iron.Dust.name=порошка железа
+item.Iron.Nugget.name=Iron Nugget
+tile.Inferior.Iron.name=Нижняя железной руды
+tile.Iron.Gravel.name=Утюг Гравий руды
+
+tile.Tin.name=Оловянная руда
+tile.Inferior.Tin.name=Нижняя Оловянная руда
+tile.Tin.Gravel.name=Tin Гравий руды
+item.Tin.Ingot.name=Tin Слиток
+item.Tin.Nugget.name=Tin Nugget
+item.Tin.Dust.name=Tin пыли
+tile.Tin.Block.name=Блок олова

@@ -1,0 +1,40 @@
+#Generated Met Google Translate
+
+itemGroup.tabOreCore=OreCore
+
+tile.Bauxite.Ore.name=Bauxieterts
+tile.Bauxite.Gravel.name=Losse Bauxieterts
+item.Aluminum.Dust.name=Aluminium Dust
+item.Aluminum.Nugget.name=Aluminium Nugget
+item.Aluminum.Ingot.name=aluminiumblokken
+tile.Aluminum.Block.name=blok aluminium
+
+tile.Copper.name=kopererts
+tile.Inferior.Copper.name=Inferior kopererts
+tile.Copper.Gravel.name=Copper Gravel Ore
+item.Copper.Dust.name=Copper Dust
+item.Copper.Nugget.name=Copper Nugget
+item.Copper.Ingot.name=Copper goudstaaf
+tile.Copper.Block.name=Blok van Koper
+
+item.Copper.II.Carbonate.Dust.name=Copper II Carbonaat
+item.Copper.II.Carbonate.Nugget.name=Copper II Carbonaat Nugget
+item.Copper.II.Carbonate.Ingot.name=Copper II Carbonaat goudstaaf
+tile.Copper.II.Carbonate.Block.name=Blok van Copper II Carbonaat
+
+tile.Inferior.Gold.name=Inferior Gold Ore
+tile.Gold.Gravel.name=Gold Gravel Ore
+item.Gold.Dust.name=Gold Dust
+
+item.Iron.Dust.name=Iron Dust
+item.Iron.Nugget.name=Iron Nugget
+tile.Inferior.Iron.name=Inferior Iron Ore
+tile.Iron.Gravel.name=Iron Gravel Ore
+
+tile.Tin.name=Tin Ore
+tile.Inferior.Tin.name=Inferior Tin Ore
+tile.Tin.Gravel.name=Tin Gravel Ore
+item.Tin.Ingot.name=Tin goudstaaf
+item.Tin.Nugget.name=Tin Nugget
+item.Tin.Dust.name=Tin Dust
+tile.Tin.Block.name=Blok van Tin

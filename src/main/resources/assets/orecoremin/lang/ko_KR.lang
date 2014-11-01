@@ -1,0 +1,40 @@
+구글 #Generated 번역
+
+itemGroup.tabOreCore=광석 코어
+
+tile.Bauxite.Ore.name=보크 사이트 광석
+tile.Bauxite.Gravel.name=느슨한 보크 사이트 광석
+item.Aluminum.Dust.name 알루미늄 먼지를 =
+item.Aluminum.Nugget.name 알루미늄 덩어리를 =
+item.Aluminum.Ingot.name 알루미늄 잉곳을 =
+알루미늄의 tile.Aluminum.Block.name=블록
+
+tile.Copper.name=구리 광석
+tile.Inferior.Copper.name=열등한 구리 광석
+tile.Copper.Gravel.name=구리 자갈 광석
+item.Copper.Dust.name 구리 먼지 =
+item.Copper.Nugget.name 구리 덩어리를 =
+item.Copper.Ingot.name 구리 잉곳을 =
+구리의 tile.Copper.Block.name=블록
+
+item.Copper.II.Carbonate.Dust.name 구리 II 탄산을 =
+item.Copper.II.Carbonate.Nugget.name 구리 II 탄산 너겟을 =
+item.Copper.II.Carbonate.Ingot.name 구리 II 탄산 잉곳을 =
+구리 II 탄산 tile.Copper.II.Carbonate.Block.name=블록
+
+tile.Inferior.Gold.name=열등한 금 광석
+tile.Gold.Gravel.name=골드 자갈 광석
+item.Gold.Dust.name 골드 먼지 =
+
+item.Iron.Dust.name 철 먼지를 =
+item.Iron.Nugget.name 철 덩어리를 =
+tile.Inferior.Iron.name=열등한 철광석
+tile.Iron.Gravel.name=철 자갈 광석
+
+tile.Tin.name=주석 광석
+tile.Inferior.Tin.name=열등한 주석 광석
+tile.Tin.Gravel.name=주석 자갈 광석
+item.Tin.Ingot.name=주석 잉곳
+item.Tin.Nugget.name=주석 덩어리
+item.Tin.Dust.name=주석 먼지
+주석의 tile.Tin.Block.name=블록

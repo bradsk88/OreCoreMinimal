@@ -1,0 +1,39 @@
+
+itemGroup.tabOreCore=OreCore
+
+tile.Bauxite.Ore.name=bauxiet
+tile.Bauxite.Gravel.name=Los bauxiet
+item.Aluminum.Dust.name=aluminium Stof
+item.Aluminum.Nugget.name=aluminium Nugget
+item.Aluminum.Ingot.name=aluminium Ingot
+tile.Aluminum.Block.name=Blok van aluminium
+
+tile.Copper.name=koper-
+tile.Inferior.Copper.name=Inferior koper erts
+tile.Copper.Gravel.name=Copper Gravel Ore
+item.Copper.Dust.name=Copper Stof
+item.Copper.Nugget.name=Copper Nugget
+item.Copper.Ingot.name=Copper Ingot
+tile.Copper.Block.name=Blok van koper
+
+item.Copper.II.Carbonate.Dust.name=Copper II Karbonaatione
+item.Copper.II.Carbonate.Nugget.name=Copper II Karbonaatione Nugget
+item.Copper.II.Carbonate.Ingot.name=Copper II Karbonaatione Ingot
+tile.Copper.II.Carbonate.Block.name=Blok van koper II Karbonaatione
+
+tile.Inferior.Gold.name=Inferior Gold Ore
+tile.Gold.Gravel.name=Gold Gravel Ore
+item.Gold.Dust.name=Gold Dust
+
+item.Iron.Dust.name=Iron Stof
+item.Iron.Nugget.name=Iron Nugget
+tile.Inferior.Iron.name=Inferior ystererts
+tile.Iron.Gravel.name=Iron Ore Gravel
+
+tile.Tin.name=tin-erts
+tile.Inferior.Tin.name=Inferior tin-erts
+tile.Tin.Gravel.name=Tin Gravel Ore
+item.Tin.Ingot.name=Tin Ingot
+item.Tin.Nugget.name=Tin Nugget
+item.Tin.Dust.name=Tin Stof
+tile.Tin.Block.name=Blok van Tin

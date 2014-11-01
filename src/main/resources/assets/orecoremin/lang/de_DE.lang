@@ -1,0 +1,40 @@
+Mit Google #Generated ‹bersetzen
+
+itemGroup.tabOreCore=OreKern
+
+tile.Bauxite.Ore.name=Bauxiterz
+tile.Bauxite.Gravel.name=Lose Bauxiterz
+item.Aluminum.Dust.name=Aluminiumstaub
+item.Aluminum.Nugget.name=Aluminium Nugget
+item.Aluminum.Ingot.name=Aluminium-Barren
+tile.Aluminum.Block.name=Aluminiumblock
+
+tile.Copper.name=Kupfererz
+tile.Inferior.Copper.name=M‰ﬂig Kupfererz
+tile.Copper.Gravel.name=Copper Gravel Ore
+item.Copper.Dust.name=Kupferstaub
+item.Copper.Nugget.name=Kupfer Nugget
+item.Copper.Ingot.name=Kupferbarren
+tile.Copper.Block.name=Kupferblock
+
+item.Copper.II.Carbonate.Dust.name=Kupfer II Carbonate
+item.Copper.II.Carbonate.Nugget.name=Kupfer II Carbonate Nugget
+item.Copper.II.Carbonate.Ingot.name=Kupfer II Carbonate Ingot
+tile.Copper.II.Carbonate.Block.name=Kupferblock II Carbonate
+
+tile.Inferior.Gold.name=M‰ﬂig Golderz
+tile.Gold.Gravel.name=Gold Gravel Ore
+item.Gold.Dust.name=Gold Dust
+
+item.Iron.Dust.name=Eisenstaub
+item.Iron.Nugget.name=Eisen Nugget
+tile.Inferior.Iron.name=M‰ﬂig Iron Ore
+tile.Iron.Gravel.name=Eisen Gravel Ore
+
+tile.Tin.name=Zinnerz
+tile.Inferior.Tin.name=M‰ﬂig Zinnerz
+tile.Tin.Gravel.name=Tin Gravel Ore
+item.Tin.Ingot.name=Tin Ingot
+item.Tin.Nugget.name=Tin Nugget
+item.Tin.Dust.name=Zinnstaub
+tile.Tin.Block.name=Block of Tin

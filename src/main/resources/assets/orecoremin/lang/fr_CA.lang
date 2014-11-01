@@ -1,0 +1,40 @@
+#Generated Avec Google Translate
+
+itemGroup.tabOreCore=OreCore
+
+tile.Bauxite.Ore.name=Bauxite Ore
+tile.Bauxite.Gravel.name=lâche Bauxite Ore
+item.Aluminum.Dust.name=aluminium poussière
+item.Aluminum.Nugget.name=aluminium Nugget
+item.Aluminum.Ingot.name=lingots d'aluminium
+tile.Aluminum.Block.name=bloc d'aluminium
+
+tile.Copper.name=minerai de cuivre
+tile.Inferior.Copper.name=minerai de cuivre de qualité inférieure
+Minerai de Gravel tile.Copper.Gravel.name=cuivre
+item.Copper.Dust.name=cuivre poussière
+item.Copper.Nugget.name=cuivre Nugget
+item.Copper.Ingot.name=Lingot de cuivre
+tile.Copper.Block.name=bloc de cuivre
+
+item.Copper.II.Carbonate.Dust.name=carbonate de cuivre II
+item.Copper.II.Carbonate.Nugget.name=cuivre II Carbonate Nugget
+item.Copper.II.Carbonate.Ingot.name=cuivre II Carbonate Lingot
+tile.Copper.II.Carbonate.Block.name=bloc de cuivre II Carbonate
+
+tile.Inferior.Gold.name=minerai d'or inférieure
+tile.Gold.Gravel.name=minerai d'or de Gravel
+item.Gold.Dust.name=Gold Dust
+
+item.Iron.Dust.name=Fer poussière
+item.Iron.Nugget.name=Fer Nugget
+tile.Inferior.Iron.name=minerai de fer de qualité inférieure
+Minerai de fer Gravel tile.Iron.Gravel.name =
+
+tile.Tin.name=Minerai d'étain
+tile.Inferior.Tin.name=Ore Tin inférieure
+Minerai de Gravel tile.Tin.Gravel.name=Tin
+item.Tin.Ingot.name=lingot d'étain
+item.Tin.Nugget.name=Tin Nugget
+item.Tin.Dust.name=Tin poussière
+tile.Tin.Block.name=Bloc de Tin

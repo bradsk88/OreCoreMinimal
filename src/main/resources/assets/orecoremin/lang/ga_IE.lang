@@ -1,0 +1,40 @@
+#Generated Le Google Translate
+
+itemGroup.tabOreCore=MéineCore
+
+tile.Bauxite.Ore.name=Báicsít Ore
+tile.Bauxite.Gravel.name=Loose Báicsít Ore
+item.Aluminum.Dust.name=Alúmanam Dust
+item.Aluminum.Nugget.name=Alúmanam Nugget
+item.Aluminum.Ingot.name=Alúmanam tinne
+tile.Aluminum.Block.name=Bloc de alúmanam
+
+tile.Copper.name=Copper Ore
+tile.Inferior.Copper.name=Inferior Copper Ore
+tile.Copper.Gravel.name=Copper méine Gairbhéal
+item.Copper.Dust.name=Dust Copar
+item.Copper.Nugget.name=Copper Nugget
+item.Copper.Ingot.name=Copper tinne
+tile.Copper.Block.name=Bloc de Copper
+
+item.Copper.II.Carbonate.Dust.name=Copper II carbónáit
+item.Copper.II.Carbonate.Nugget.name=Copper II carbónáit Nugget
+item.Copper.II.Carbonate.Ingot.name=Copper II carbónáit tinne
+tile.Copper.II.Carbonate.Block.name=Bloc de Copper II carbónáit
+
+tile.Inferior.Gold.name=Inferior Óir Ore
+tile.Gold.Gravel.name=Óir Gravel Méine
+item.Gold.Dust.name=Óir Dust
+
+item.Iron.Dust.name=Iarann ​​Dust
+item.Iron.Nugget.name=Iarann ​​Nugget
+tile.Inferior.Iron.name=Inferior Iarann ​​Ore
+tile.Iron.Gravel.name=iarainn Ore Gairbhéal
+
+tile.Tin.name=Stáin Méine
+tile.Inferior.Tin.name=Inferior Stáin Méine
+tile.Tin.Gravel.name=Stáin Gravel Méine
+item.Tin.Ingot.name=Stáin tinne
+item.Tin.Nugget.name=Stáin Nugget
+item.Tin.Dust.name=Stáin Dust
+tile.Tin.Block.name=Bloc de Stáin

@@ -1,0 +1,40 @@
+#Generated Med Google Translate
+
+itemGroup.tabOreCore=OreCore
+
+tile.Bauxite.Ore.name=bauxitmalm
+tile.Bauxite.Gravel.name=Loose bauxitmalm
+item.Aluminum.Dust.name=aluminiumsstøv
+item.Aluminum.Nugget.name=Aluminum Nugget
+item.Aluminum.Ingot.name=aluminum barren
+tile.Aluminum.Block.name=blok af aluminium
+
+tile.Copper.name=Copper Ore
+tile.Inferior.Copper.name=ringere Copper Ore
+tile.Copper.Gravel.name=Kobber Gravel Ore
+item.Copper.Dust.name=Copper Dust
+item.Copper.Nugget.name=Copper Nugget
+item.Copper.Ingot.name=kobberbarre
+tile.Copper.Block.name=blok af kobber
+
+item.Copper.II.Carbonate.Dust.name=Copper II Carbonate
+item.Copper.II.Carbonate.Nugget.name=Copper II Carbonate Nugget
+item.Copper.II.Carbonate.Ingot.name=Copper II Carbonate Ingot
+tile.Copper.II.Carbonate.Block.name=Blok af Copper II Carbonate
+
+tile.Inferior.Gold.name=ringere Gold Ore
+tile.Gold.Gravel.name=Guld Gravel Ore
+item.Gold.Dust.name=Gold Dust
+
+item.Iron.Dust.name=Iron Dust
+item.Iron.Nugget.name=Iron Nugget
+tile.Inferior.Iron.name=ringere Iron Ore
+tile.Iron.Gravel.name=Iron Gravel Ore
+
+tile.Tin.name=Tin Ore
+tile.Inferior.Tin.name=ringere Tin Ore
+tile.Tin.Gravel.name=Tin Gravel Ore
+item.Tin.Ingot.name=Tin Ingot
+item.Tin.Nugget.name=Tin Nugget
+item.Tin.Dust.name=Tin Dust
+tile.Tin.Block.name=Blok af Tin
