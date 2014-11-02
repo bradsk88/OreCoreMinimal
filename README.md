@@ -8,7 +8,7 @@ A minecraft mod which ONLY provides ores - hopefully to be used as a standard
 Every item in this mod is obtainable somehow in Vanilla Minecraft.  No machines should be necessary.
 
 All metals are obtainable in dust form by shoveling their gravel.  For example, iron dust is obtainable from iron gravel 
-ore.  Mind that, unless configured otherwise it may be quite rare to come across these gravels andwhere but under the ocean.
+ore.  Mind that, unless configured otherwise it may be quite rare to come across these gravels anywhere but under the ocean.
 
 Forum Post
 =======
