@@ -1,4 +1,4 @@
-def modVersion='1.7.2-1.0.1-SNAPSHOT'
+def modVersion='1.7.2-1.0.0-dev'
 def modName='OreCoreMin'
 
 buildscript {
@@ -33,10 +33,10 @@ publishing {
     }
     repositories {
         maven {
-            url "http://bradj.ca:8081/nexus/content/repositories/snapshots"
+            url "http://bradj.ca:8081/nexus/content/repositories/releases"
             credentials {
-                username 'username'
-                password 'password'
+                username 'bradsk88'
+                password 'KZz*6VvU4I7@'
             }
         }
     }
