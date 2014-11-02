@@ -21,7 +21,7 @@ public class OreCoreMinWorldGen implements IWorldGenerator {
 	public OreCoreMinWorldGen(Configuration config, Logger logger) {
 		this.config = Preconditions.checkNotNull(config);
 		this.logger = Preconditions.checkNotNull(logger);
-		config.setCategoryComment("oregen", "OreCore was designed to use " + DEFAULT_OREGEN_VALUE
+		config.addCustomCategoryComment("oregen", "OreCore was designed to use " + DEFAULT_OREGEN_VALUE
 				+ " for all ore generation values, so you can feel relatively confident using\n"
 				+ "that here.  Setting the value to 0 will stop the ore from generating entirely.  Setting the value to\n"
 				+ "something greater than "

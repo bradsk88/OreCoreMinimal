@@ -1,4 +1,4 @@
-def modVersion='1.7.10-1.0.1-SNAPSHOT'
+def modVersion='1.7.2-1.0.1-SNAPSHOT'
 def modName='OreCoreMin'
 
 buildscript {
@@ -44,12 +44,12 @@ publishing {
 
 apply plugin: 'forge'
 
-version = "1.7.10-1.0.1-SNAPSHOT"
-group= "ca.bradj.orecoremin" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+version = modVersion
+group= "ca.bradj.orecoremin"
 archivesBaseName = "OreCoreMin"
 
 minecraft {
-    version = "1.7.10-10.13.2.1230"
+    version = "1.7.2-10.12.2.1121"
     runDir = "eclipse"
 }
 
