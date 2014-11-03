@@ -1,6 +1,6 @@
 package ca.bradj.orecoremin.item.aluminum;
 
-import ca.bradj.orecoremin.item.OreCoreMinItem;
+import ca.bradj.orecoremin.item.base.OreCoreMinItem;
 
 public class AluminumIngot extends OreCoreMinItem {
 

@@ -1,12 +1,17 @@
 package ca.bradj.orecoremin.item.tin;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import ca.bradj.orecoremin.OreCoreMin;
-import ca.bradj.orecoremin.item.PureBlock;
 
-public class PureBlockMin extends PureBlock {
+public class PureBlockMin extends Block {
 
     public PureBlockMin(String texture) {
-        super("orecoremin", texture, OreCoreMin.tabOreCoreMin);
+        super(Material.rock);
+        setHardness(3.0f);
+        setHarvestLevel("pickaxe", 1);
+        setBlockTextureName("orecoremin:" + texture);
+        setCreativeTab(OreCoreMin.tabOreCoreMin);
     }
 
 }

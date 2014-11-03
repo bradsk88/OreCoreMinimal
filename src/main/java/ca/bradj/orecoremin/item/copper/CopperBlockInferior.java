@@ -1,6 +1,6 @@
 package ca.bradj.orecoremin.item.copper;
 
-import ca.bradj.orecoremin.item.OreBlock;
+import ca.bradj.orecoremin.item.base.OreBlock;
 
 public class CopperBlockInferior extends OreBlock {
 

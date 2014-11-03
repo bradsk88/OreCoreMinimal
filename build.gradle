@@ -1,4 +1,4 @@
-def modVersion='1.7.10-1.0.1-SNAPSHOT'
+def modVersion='1.7.10-1.0.3-SNAPSHOT'
 def modName='OreCoreMin'
 
 buildscript {
@@ -11,10 +11,10 @@ buildscript {
         maven {
             name = "sonatype"
             url = "https://oss.sonatype.org/content/repositories/snapshots/"
-        }
+        } 
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT' 
     }
 }
 
@@ -44,7 +44,7 @@ publishing {
 
 apply plugin: 'forge'
 
-version = "1.7.10-1.0.1-SNAPSHOT"
+version = modVersion
 group= "ca.bradj.orecoremin" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "OreCoreMin"
 
@@ -64,7 +64,25 @@ repositories {
  	}
 }
 
+configurations {
+    shade
+    compile.extendsFrom shade
+}
+
 dependencies { 
+	shade 'ca.bradj:Forge:1.7.10-1.0.0-SNAPSHOT'
+}
+
+jar {
+    configurations.shade.each { dep ->
+        from(project.zipTree(dep)){
+            exclude 'META-INF', 'META-INF/**'
+        }
+    }
+}
+
+minecraft {
+    srgExtra "PK: ca/bradj/forge ca/bradj/orecoremin/forge"
 }
 
 processResources

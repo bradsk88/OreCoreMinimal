@@ -1,6 +1,6 @@
 package ca.bradj.orecoremin.item.iron;
 
-import ca.bradj.orecoremin.item.OreBlock;
+import ca.bradj.orecoremin.item.base.OreBlock;
 
 public class IronBlockInferior extends OreBlock {
 

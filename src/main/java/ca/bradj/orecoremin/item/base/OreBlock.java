@@ -1,4 +1,4 @@
-package ca.bradj.orecoremin.item;
+package ca.bradj.orecoremin.item.base;
 
 import net.minecraft.block.material.Material;
 

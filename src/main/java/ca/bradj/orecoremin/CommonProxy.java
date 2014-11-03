@@ -14,13 +14,14 @@ public class CommonProxy {
 
 		Configuration config = new Configuration(e.getSuggestedConfigurationFile());
 		config.load();
-		OreCoreMinItems.init();
+		OreCoreMinItems.preInit();
 		WORLD_GEN = new OreCoreMinWorldGen(config, e.getModLog());
 
 		config.save();
 	}
 
 	public void init() {
+	    OreCoreMinItems.init();
 		GameRegistry.registerWorldGenerator(WORLD_GEN, 1);
 	}
 

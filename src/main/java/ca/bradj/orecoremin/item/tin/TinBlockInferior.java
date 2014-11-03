@@ -1,6 +1,6 @@
 package ca.bradj.orecoremin.item.tin;
 
-import ca.bradj.orecoremin.item.OreBlock;
+import ca.bradj.orecoremin.item.base.OreBlock;
 
 public class TinBlockInferior extends OreBlock {
 

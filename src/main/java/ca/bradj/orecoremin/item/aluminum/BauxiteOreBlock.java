@@ -2,7 +2,7 @@ package ca.bradj.orecoremin.item.aluminum;
 
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
-import ca.bradj.orecoremin.item.OreBlock;
+import ca.bradj.orecoremin.item.base.OreBlock;
 
 public class BauxiteOreBlock extends OreBlock {
 

@@ -19,13 +19,13 @@ public class OreCoreMin {
     public static CommonProxy proxy;
 
     public static final String MODID = "OreCoreMin";
-    public static final String VERSION = "1.0.0";
+    public static final String VERSION = "1.0.2";
 
     public static CreativeTabs tabOreCoreMin = new CreativeTabs("tabOreCoreMin") {
         @Override
         @SideOnly(Side.CLIENT)
         public Item getTabIconItem() {
-            return OreCoreMinItems.copperIngot;
+            return OreCoreMinItems.copper().asIngot();
         }
     };
 
