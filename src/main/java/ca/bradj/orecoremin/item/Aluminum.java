@@ -15,17 +15,17 @@ import ca.bradj.orecoremin.item.aluminum.BauxiteOreBlock;
 
 public class Aluminum implements StandardElement {
 
-    private static final String BAUXITE_DICT = "oreBauxite";
-    private static final String BAUXITE_DICT2 = "oreAluminum";
-    private static final String BAUXITE_DICT3 = "oreAluminium";
-    private static final String ALUMINUM_DUST_DICT = "dustAluminum";
-    private static final String ALUMINUM_DUST_DICT2 = "dustAluminium";
-    private static final String ALUMINUM_NUGGET_DICT = "nuggetAluminum";
-    private static final String ALUMINUM_NUGGET_DICT2 = "nuggetAluminium";
-    private static final String ALUMINUM_INGOT_DICT = "ingotAluminum";
-    private static final String ALUMINUM_INGOT_DICT2 = "ingotAluminium";
-    private static final String ALUMINUM_BLOCK_DICT = "blockAluminum";
-    private static final String ALUMINUM_BLOCK_DICT2 = "blockAluminium";
+    private static final String BAUXITE_DICT = OreCoreRegistration.registerDictString("oreBauxite");
+    private static final String BAUXITE_DICT2 = OreCoreRegistration.registerDictString("oreAluminum");
+    private static final String BAUXITE_DICT3 = OreCoreRegistration.registerDictString("oreAluminium");
+    private static final String ALUMINUM_DUST_DICT = OreCoreRegistration.registerDictString("dustAluminum");
+    private static final String ALUMINUM_DUST_DICT2 = OreCoreRegistration.registerDictString("dustAluminium");
+    private static final String ALUMINUM_NUGGET_DICT = OreCoreRegistration.registerDictString("nuggetAluminum");
+    private static final String ALUMINUM_NUGGET_DICT2 = OreCoreRegistration.registerDictString("nuggetAluminium");
+    private static final String ALUMINUM_INGOT_DICT = OreCoreRegistration.registerDictString("ingotAluminum");
+    private static final String ALUMINUM_INGOT_DICT2 = OreCoreRegistration.registerDictString("ingotAluminium");
+    private static final String ALUMINUM_BLOCK_DICT = OreCoreRegistration.registerDictString("blockAluminum");
+    private static final String ALUMINUM_BLOCK_DICT2 = OreCoreRegistration.registerDictString("blockAluminium");
 
     private static final String BAUXITE_NAME = "Bauxite.Ore";
     private static final String BAUXITE_GRAVEL_NAME = "Bauxite.Gravel";
@@ -77,17 +77,17 @@ public class Aluminum implements StandardElement {
 
     public static void init() {
 
-        OreCoreRegistration.nuggetToIngotStandard(ALUMINUM_NUGGET_DICT, OreCoreMinItemsRepo.aluminumIngot);
-        OreCoreRegistration.nuggetToIngotStandard(ALUMINUM_NUGGET_DICT2, OreCoreMinItemsRepo.aluminumIngot);
+        OreCoreRegistration.nuggetToIngotStandard(OreCoreMinItems.aluminum().asNugget(), ALUMINUM_NUGGET_DICT, OreCoreMinItemsRepo.aluminumIngot);
+        OreCoreRegistration.nuggetToIngotStandard(OreCoreMinItems.aluminum().asNugget(), ALUMINUM_NUGGET_DICT2, OreCoreMinItemsRepo.aluminumIngot);
 
-        OreCoreRegistration.ingotToNuggetStandard(ALUMINUM_INGOT_DICT, OreCoreMinItemsRepo.aluminumNugget);
-        OreCoreRegistration.ingotToNuggetStandard(ALUMINUM_INGOT_DICT2, OreCoreMinItemsRepo.aluminumNugget);
+        OreCoreRegistration.ingotToNuggetStandard(OreCoreMinItems.aluminum().asIngot(), ALUMINUM_INGOT_DICT, OreCoreMinItemsRepo.aluminumNugget);
+        OreCoreRegistration.ingotToNuggetStandard(OreCoreMinItems.aluminum().asIngot(), ALUMINUM_INGOT_DICT2, OreCoreMinItemsRepo.aluminumNugget);
 
-        OreCoreRegistration.ingotToBlockStandard(ALUMINUM_INGOT_DICT, OreCoreMinItemsRepo.aluminumBlock);
-        OreCoreRegistration.ingotToBlockStandard(ALUMINUM_INGOT_DICT2, OreCoreMinItemsRepo.aluminumBlock);
+        OreCoreRegistration.ingotToBlockStandard(OreCoreMinItems.aluminum().asIngot(), ALUMINUM_INGOT_DICT, OreCoreMinItemsRepo.aluminumBlock);
+        OreCoreRegistration.ingotToBlockStandard(OreCoreMinItems.aluminum().asIngot(), ALUMINUM_INGOT_DICT2, OreCoreMinItemsRepo.aluminumBlock);
 
-        OreCoreRegistration.blockToIngotStandard(ALUMINUM_BLOCK_DICT, OreCoreMinItemsRepo.aluminumIngot);
-        OreCoreRegistration.blockToIngotStandard(ALUMINUM_BLOCK_DICT2, OreCoreMinItemsRepo.aluminumIngot);
+        OreCoreRegistration.blockToIngotStandard(OreCoreMinItems.aluminum().asPureBlock(), ALUMINUM_BLOCK_DICT, OreCoreMinItemsRepo.aluminumIngot);
+        OreCoreRegistration.blockToIngotStandard(OreCoreMinItems.aluminum().asPureBlock(), ALUMINUM_BLOCK_DICT2, OreCoreMinItemsRepo.aluminumIngot);
 
         OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.aluminumDust, OreCoreMinItemsRepo.aluminumNugget, 3);
         OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.bauxite, OreCoreMinItemsRepo.aluminumIngot, 1);

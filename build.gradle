@@ -1,4 +1,4 @@
-def modVersion='1.7.10-1.0.3-SNAPSHOT'
+def modVersion='1.7.10-1.0.3.1'
 def modName='OreCoreMin'
 
 buildscript {
@@ -33,10 +33,10 @@ publishing {
     }
     repositories {
         maven {
-            url "http://bradj.ca:8081/nexus/content/repositories/snapshots"
+            url "http://bradj.ca:8081/nexus/content/repositories/releases"
             credentials {
-                username 'username'
-                password 'password'
+                username 'bradsk88'
+                password 'KZz*6VvU4I7@'
             }
         }
     }
@@ -70,7 +70,7 @@ configurations {
 }
 
 dependencies { 
-	shade 'ca.bradj:Forge:1.7.10-1.0.0-SNAPSHOT'
+	shade 'ca.bradj:Forge:1.7.10-1.0.2'
 }
 
 jar {

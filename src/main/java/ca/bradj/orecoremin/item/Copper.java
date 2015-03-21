@@ -37,13 +37,13 @@ public class Copper implements StandardElement {
 
     public static final DictionaryNames DICT = new DictionaryNames() {
         {
-            super.ORE = "oreCopper";
-            super.INFERIOR = "oreCopperInferior";
-            super.DUST = "dustCopper";
-            super.INGOT = "ingotCopper";
-            super.NUGGET = "nuggetCopper";
-            super.GRAVEL = "gravelCopper";
-            super.PURE_BLOCK = "blockCopper";
+            super.ORE.set("oreCopper");
+            super.INFERIOR.set("oreCopperInferior");
+            super.DUST.set("dustCopper");
+            super.INGOT.set("ingotCopper");
+            super.NUGGET.set("nuggetCopper");
+            super.GRAVEL.set("gravelCopper");
+            super.PURE_BLOCK.set("blockCopper");
         }
     };
 

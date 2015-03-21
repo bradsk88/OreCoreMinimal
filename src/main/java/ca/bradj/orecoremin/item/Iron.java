@@ -52,8 +52,8 @@ public class Iron implements VanillaPlus {
     public static void init() {
         OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.ironDust, Items.iron_ingot, 1);
 
-        OreCoreRegistration.nuggetToIngotStandard(IRON_NUGGET_DICT, Items.iron_ingot);
-        OreCoreRegistration.ingotToNuggetStandard(IRON_INGOT_DICT, OreCoreMinItemsRepo.ironNugget);
+        OreCoreRegistration.nuggetToIngotStandard(OreCoreMinItems.iron().asNugget(), IRON_NUGGET_DICT, Items.iron_ingot);
+        OreCoreRegistration.ingotToNuggetStandard(Items.iron_ingot, IRON_INGOT_DICT, OreCoreMinItemsRepo.ironNugget);
 
         OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.ironGravel, Items.iron_ingot, 1);
         OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.ironInferior, OreCoreMinItemsRepo.ironNugget, 3);

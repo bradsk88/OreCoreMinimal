@@ -35,12 +35,12 @@ public class Copper2Carbonate implements StandardForgeable {
         getInstance().doPreInit();
     }
 
-    private DictionaryNames DICT = new DictionaryNames() {
+    private static DictionaryNames DICT = new DictionaryNames() {
         {
-            this.DUST = "dustCopper2Carbonate";
-            this.INGOT = "ingotCopper2Carbonate";
-            this.PURE_BLOCK = "blockCopper2Carbonate";
-            this.NUGGET = "nuggetCopper2Carbonate";
+            this.DUST.set("dustCopper2Carbonate");
+            this.INGOT.set("ingotCopper2Carbonate");
+            this.PURE_BLOCK.set("blockCopper2Carbonate");
+            this.NUGGET.set("nuggetCopper2Carbonate");
         }
     };
 

@@ -36,13 +36,13 @@ public class Tin implements StandardElement {
 
     public static final DictionaryNames DICT = new DictionaryNames() {
         {
-            super.ORE = "oreTin";
-            super.INFERIOR = "oreTinInferior";
-            super.DUST = "dustTin";
-            super.INGOT = "ingotTin";
-            super.NUGGET = "nuggetTin";
-            super.GRAVEL = "gravelTin";
-            super.PURE_BLOCK = "blockTin";
+            super.ORE.set("oreTin");
+            super.INFERIOR.set("oreTinInferior");
+            super.DUST.set("dustTin");
+            super.INGOT.set("ingotTin");
+            super.NUGGET.set("nuggetTin");
+            super.GRAVEL.set("gravelTin");
+            super.PURE_BLOCK.set("blockTin");
         }
     };
 
@@ -86,6 +86,5 @@ public class Tin implements StandardElement {
 	@Override public Item asNugget() { return OreCoreMinItemsRepo.tinNugget; }
 	@Override public OreBlock asOre() { return OreCoreMinItemsRepo.tin; }
 	@Override public Block asPureBlock() { return OreCoreMinItemsRepo.tinBlock; }
-
 
 }
