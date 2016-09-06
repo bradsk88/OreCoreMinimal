@@ -1,17 +1,14 @@
 package ca.bradj.orecoremin.item;
 
+import ca.bradj.orecoremin.util.DictionaryNames;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import ca.bradj.forge.DictionaryNames;
-import ca.bradj.forge.OreCoreRegistration;
-import ca.bradj.forge.StandardForgeable;
-import ca.bradj.forge.StandardForgeableRegistrations;
 import ca.bradj.orecoremin.item.copper.carb.Copper2CarbonateDust;
 import ca.bradj.orecoremin.item.copper.carb.Copper2CarbonateIngot;
 import ca.bradj.orecoremin.item.copper.carb.Copper2CarbonateNugget;
 import ca.bradj.orecoremin.item.copper.carb.Copper2CarbonatePureBlock;
 
-public class Copper2Carbonate implements StandardForgeable {
+public class Copper2Carbonate implements OreCoreMinForgeable {
 
     private static final String COPPER_2_CARBONATE_DUST_NAME = "Copper.II.Carbonate.Dust";
     private static final String COPPER_2_CARBONATE_NUGGET_NAME = "Copper.II.Carbonate.Nugget";
@@ -35,26 +32,25 @@ public class Copper2Carbonate implements StandardForgeable {
         getInstance().doPreInit();
     }
 
-    private static DictionaryNames DICT = new DictionaryNames() {
-        {
-            this.DUST.set("dustCopper2Carbonate");
-            this.INGOT.set("ingotCopper2Carbonate");
-            this.PURE_BLOCK.set("blockCopper2Carbonate");
-            this.NUGGET.set("nuggetCopper2Carbonate");
-        }
-    };
+//    private static DictionaryNames DICT = new DictionaryNames() {
+//        {
+//            this.DUST.set("dustCopper2Carbonate");
+//            this.INGOT.set("ingotCopper2Carbonate");
+//            this.PURE_BLOCK.set("blockCopper2Carbonate");
+//            this.NUGGET.set("nuggetCopper2Carbonate");
+//        }
+//    };
 
     private void doPreInit() {
-        OreCoreMinItemsRepo.copper2CarbonateDust = OreCoreRegistration.registerItem(new Copper2CarbonateDust(), COPPER_2_CARBONATE_DUST_NAME);
-        OreCoreMinItemsRepo.copper2CarbonateNugget = OreCoreRegistration.registerItem(new Copper2CarbonateNugget(), COPPER_2_CARBONATE_NUGGET_NAME);
-        OreCoreMinItemsRepo.copper2CarbonateIngot = OreCoreRegistration.registerItem(new Copper2CarbonateIngot(), COPPER_2_CARBONATE_INGOT_NAME);
-        OreCoreMinItemsRepo.copper2CarbonateBlock = OreCoreRegistration.registerBlock(new Copper2CarbonatePureBlock(), COPPER_2_CARBONATE_BLOCK_NAME);
-
-        StandardForgeableRegistrations.initDictionary(this, DICT);
+//        OreCoreMinItemsRepo.copper2CarbonateDust = OreCoreRegistration.registerItem(new Copper2CarbonateDust(), COPPER_2_CARBONATE_DUST_NAME);
+//        OreCoreMinItemsRepo.copper2CarbonateNugget = OreCoreRegistration.registerItem(new Copper2CarbonateNugget(), COPPER_2_CARBONATE_NUGGET_NAME);
+//        OreCoreMinItemsRepo.copper2CarbonateIngot = OreCoreRegistration.registerItem(new Copper2CarbonateIngot(), COPPER_2_CARBONATE_INGOT_NAME);
+//        OreCoreMinItemsRepo.copper2CarbonateBlock = OreCoreRegistration.registerBlock(new Copper2CarbonatePureBlock(), COPPER_2_CARBONATE_BLOCK_NAME);
+//        StandardForgeableRegistrations.initDictionary(this, DICT);
     }
 
     private void doInit() {
-        StandardForgeableRegistrations.initRecipes(this, DICT);
+//        StandardForgeableRegistrations.initRecipes(this, DICT);
     }
 
     //@formatter:off

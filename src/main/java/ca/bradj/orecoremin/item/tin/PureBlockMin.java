@@ -7,10 +7,10 @@ import ca.bradj.orecoremin.OreCoreMin;
 public class PureBlockMin extends Block {
 
     public PureBlockMin(String texture) {
-        super(Material.rock);
+        super(Material.ROCK);
         setHardness(3.0f);
         setHarvestLevel("pickaxe", 1);
-        setBlockTextureName("orecoremin:" + texture);
+//        setBlockTextureName("orecoremin:" + texture);
         setCreativeTab(OreCoreMin.tabOreCoreMin);
     }
 

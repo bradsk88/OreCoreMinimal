@@ -2,6 +2,8 @@ package ca.bradj.orecoremin;
 
 import java.util.Random;
 
+import net.minecraft.world.chunk.IChunkGenerator;
+import net.minecraftforge.fml.common.IWorldGenerator;
 import org.apache.logging.log4j.Logger;
 
 import com.google.common.base.Preconditions;
@@ -9,7 +11,6 @@ import com.google.common.base.Preconditions;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraftforge.common.config.Configuration;
-import cpw.mods.fml.common.IWorldGenerator;
 
 public class OreCoreMinWorldGen implements IWorldGenerator {
 
@@ -45,17 +46,15 @@ public class OreCoreMinWorldGen implements IWorldGenerator {
 	}
 
 	@Override
-	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
-
-		switch (world.provider.dimensionId) {
-		case -1: // nether
-			return;
-		case 0: // overworld
-			new OreCoreMinOverworldGen(config, logger, world, random, chunkX * 16, chunkZ * 16).generate();
-		case 1: // end
-			return;
-		}
-
+	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
+		// TODO: Reimplement
+//		switch (world.provider.dimensionId) {
+//			case -1: // nether
+//				return;
+//			case 0: // overworld
+//				new OreCoreMinOverworldGen(config, logger, world, random, chunkX * 16, chunkZ * 16).generate();
+//			case 1: // end
+//				return;
+//		}
 	}
-
 }

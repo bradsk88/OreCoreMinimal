@@ -2,10 +2,6 @@ package ca.bradj.orecoremin.item;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import ca.bradj.forge.DictionaryNames;
-import ca.bradj.forge.OreCoreRegistration;
-import ca.bradj.forge.StandardElement;
-import ca.bradj.forge.StandardElementRegistrations;
 import ca.bradj.orecoremin.item.base.GravelBlock;
 import ca.bradj.orecoremin.item.base.OreBlock;
 import ca.bradj.orecoremin.item.tin.TinBlock;
@@ -16,7 +12,7 @@ import ca.bradj.orecoremin.item.tin.TinIngot;
 import ca.bradj.orecoremin.item.tin.TinNugget;
 import ca.bradj.orecoremin.item.tin.TinPureBlock;
 
-public class Tin implements StandardElement {
+public class Tin implements OreCoreMinForgeable, OreCoreMinElement {
 
     public static final int TIN_TOP_LEVEL = 55;
     public static final int TIN_GRAVEL_TOP_LEVEL = 55;
@@ -34,17 +30,17 @@ public class Tin implements StandardElement {
         return INSTANCE;
     }
 
-    public static final DictionaryNames DICT = new DictionaryNames() {
-        {
-            super.ORE.set("oreTin");
-            super.INFERIOR.set("oreTinInferior");
-            super.DUST.set("dustTin");
-            super.INGOT.set("ingotTin");
-            super.NUGGET.set("nuggetTin");
-            super.GRAVEL.set("gravelTin");
-            super.PURE_BLOCK.set("blockTin");
-        }
-    };
+//    public static final DictionaryNames DICT = new DictionaryNames() {
+//        {
+//            super.ORE.set("oreTin");
+//            super.INFERIOR.set("oreTinInferior");
+//            super.DUST.set("dustTin");
+//            super.INGOT.set("ingotTin");
+//            super.NUGGET.set("nuggetTin");
+//            super.GRAVEL.set("gravelTin");
+//            super.PURE_BLOCK.set("blockTin");
+//        }
+//    };
 
     private static final String TIN_NAME = "Tin";
     private static final String TIN_INFERIOR_NAME = "Inferior.Tin";
@@ -63,19 +59,20 @@ public class Tin implements StandardElement {
     }
 
     private void doPreInit() {
-        OreCoreMinItemsRepo.tin = OreCoreRegistration.registerBlock(new TinBlock(), TIN_NAME);
-        OreCoreMinItemsRepo.tinInferior = OreCoreRegistration.registerBlock(new TinBlockInferior(), TIN_INFERIOR_NAME);
-        OreCoreMinItemsRepo.tinIngot = OreCoreRegistration.registerItem(new TinIngot(), TIN_INGOT_NAME);
-        OreCoreMinItemsRepo.tinNugget = OreCoreRegistration.registerItem(new TinNugget(), TIN_NUGGET_NAME);
-        OreCoreMinItemsRepo.tinDust = OreCoreRegistration.registerItem(new TinDust(), TIN_DUST_NAME);
-        OreCoreMinItemsRepo.tinGravel = OreCoreRegistration.registerBlock(new TinGravel(), TIN_GRAVEL_NAME);
-        OreCoreMinItemsRepo.tinBlock = OreCoreRegistration.registerBlock(new TinPureBlock(), TIN_BLOCK_NAME);
-
-        StandardElementRegistrations.initDictionary(this, DICT);
+//        OreCoreMinItemsRepo.tin = OreCoreRegistration.registerBlock(new TinBlock(), TIN_NAME);
+//        OreCoreMinItemsRepo.tinInferior = OreCoreRegistration.registerBlock(new TinBlockInferior(), TIN_INFERIOR_NAME);
+//        OreCoreMinItemsRepo.tinIngot = OreCoreRegistration.registerItem(new TinIngot(), TIN_INGOT_NAME);
+//        OreCoreMinItemsRepo.tinNugget = OreCoreRegistration.registerItem(new TinNugget(), TIN_NUGGET_NAME);
+//        OreCoreMinItemsRepo.tinDust = OreCoreRegistration.registerItem(new TinDust(), TIN_DUST_NAME);
+//        OreCoreMinItemsRepo.tinGravel = OreCoreRegistration.registerBlock(new TinGravel(), TIN_GRAVEL_NAME);
+//        OreCoreMinItemsRepo.tinBlock = OreCoreRegistration.registerBlock(new TinPureBlock(), TIN_BLOCK_NAME);
+//
+//        StandardElementRegistrations.initDictionary(this, DICT);
     }
 
     public void doInit() {
-        StandardElementRegistrations.initRecipes(this, DICT);
+
+//        StandardElementRegistrations.initRecipes(this, DICT);
     }
 
     //@formatter:off

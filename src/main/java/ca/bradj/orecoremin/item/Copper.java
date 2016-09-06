@@ -1,11 +1,8 @@
 package ca.bradj.orecoremin.item;
 
+import ca.bradj.orecoremin.OreCoreMin;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import ca.bradj.forge.DictionaryNames;
-import ca.bradj.forge.OreCoreRegistration;
-import ca.bradj.forge.StandardElement;
-import ca.bradj.forge.StandardElementRegistrations;
 import ca.bradj.orecoremin.item.base.GravelBlock;
 import ca.bradj.orecoremin.item.base.OreBlock;
 import ca.bradj.orecoremin.item.copper.CopperBlock;
@@ -15,8 +12,10 @@ import ca.bradj.orecoremin.item.copper.CopperGravel;
 import ca.bradj.orecoremin.item.copper.CopperIngot;
 import ca.bradj.orecoremin.item.copper.CopperNugget;
 import ca.bradj.orecoremin.item.copper.CopperPureBlock;
+import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class Copper implements StandardElement {
+public class Copper implements OreCoreMinElement, OreCoreMinForgeable {
 
     public static final int COPPER_TOP_LEVEL = 50;
     public static final int COPPER_GRAVEL_TOP_LEVEL = 50;
@@ -35,17 +34,18 @@ public class Copper implements StandardElement {
         return INSTANCE;
     }
 
-    public static final DictionaryNames DICT = new DictionaryNames() {
-        {
-            super.ORE.set("oreCopper");
-            super.INFERIOR.set("oreCopperInferior");
-            super.DUST.set("dustCopper");
-            super.INGOT.set("ingotCopper");
-            super.NUGGET.set("nuggetCopper");
-            super.GRAVEL.set("gravelCopper");
-            super.PURE_BLOCK.set("blockCopper");
-        }
-    };
+// TODO: Simplify and implement this
+//    public static final DictionaryNames DICT = new DictionaryNames() {
+//        {
+//            super.ORE.set("oreCopper");
+//            super.INFERIOR.set("oreCopperInferior");
+//            super.DUST.set("dustCopper");
+//            super.INGOT.set("ingotCopper");
+//            super.NUGGET.set("nuggetCopper");
+//            super.GRAVEL.set("gravelCopper");
+//            super.PURE_BLOCK.set("blockCopper");
+//        }
+//    };
 
     private static final String COPPER_NAME = "Copper";
     private static final String COPPER_INFERIOR_NAME = "Inferior.Copper";
@@ -64,19 +64,19 @@ public class Copper implements StandardElement {
     }
 
     private void doPreInit() {
-        OreCoreMinItemsRepo.copper = OreCoreRegistration.registerBlock(new CopperBlock(), COPPER_NAME);
-        OreCoreMinItemsRepo.copperInferior = OreCoreRegistration.registerBlock(new CopperBlockInferior(), COPPER_INFERIOR_NAME);
-        OreCoreMinItemsRepo.copperIngot = OreCoreRegistration.registerItem(new CopperIngot(), COPPER_INGOT_NAME);
-        OreCoreMinItemsRepo.copperNugget = OreCoreRegistration.registerItem(new CopperNugget(), COPPER_NUGGET_NAME);
-        OreCoreMinItemsRepo.copperDust = OreCoreRegistration.registerItem(new CopperDust(), COPPER_DUST_NAME);
-        OreCoreMinItemsRepo.copperGravel = OreCoreRegistration.registerBlock(new CopperGravel(), COPPER_GRAVEL_NAME);
-        OreCoreMinItemsRepo.copperBlock = OreCoreRegistration.registerBlock(new CopperPureBlock(), COPPER_BLOCK_NAME);
+//        OreCoreMinItemsRepo.copper = OreCoreMin.proxy.registerBlock(new CopperBlock(), COPPER_NAME);
+//        OreCoreMinItemsRepo.copperInferior = OreCoreRegistration.registerBlock(new CopperBlockInferior(), COPPER_INFERIOR_NAME);
+//        OreCoreMinItemsRepo.copperIngot = OreCoreRegistration.registerItem(new CopperIngot(), COPPER_INGOT_NAME);
+//        OreCoreMinItemsRepo.copperNugget = OreCoreRegistration.registerItem(new CopperNugget(), COPPER_NUGGET_NAME);
+//        OreCoreMinItemsRepo.copperDust = OreCoreRegistration.registerItem(new CopperDust(), COPPER_DUST_NAME);
+//        OreCoreMinItemsRepo.copperGravel = OreCoreRegistration.registerBlock(new CopperGravel(), COPPER_GRAVEL_NAME);
+//        OreCoreMinItemsRepo.copperBlock = OreCoreRegistration.registerBlock(new CopperPureBlock(), COPPER_BLOCK_NAME);
 
-        StandardElementRegistrations.initDictionary(this, DICT);
+//        StandardElementRegistrations.initDictionary(this, DICT);
     }
 
     public void doInit() {
-        StandardElementRegistrations.initRecipes(this, DICT);
+//        StandardElementRegistrations.initRecipes(this, DICT);
     }
 
     //@formatter:off

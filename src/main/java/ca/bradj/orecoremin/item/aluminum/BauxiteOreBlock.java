@@ -12,9 +12,10 @@ public class BauxiteOreBlock extends OreBlock {
 		this.setHarvestLevel("pickaxe", 2);
 	}
 
-	@Override
-	public boolean isReplaceableOreGen(World world, int x, int y, int z, Block target) {
-		return true;
-	}
+	// TODO: What was this for?
+//	@Override
+//	public boolean isReplaceableOreGen(World world, int x, int y, int z, Block target) {
+//		return true;
+//	}
 
 }

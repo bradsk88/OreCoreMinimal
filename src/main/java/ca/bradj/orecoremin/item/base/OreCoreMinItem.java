@@ -6,7 +6,9 @@ import net.minecraft.item.Item;
 public class OreCoreMinItem extends Item {
 
 	public OreCoreMinItem(String name) {
-		setTextureName("orecoremin:"+name);
+		setUnlocalizedName(name);
+		setRegistryName(name);
+//		setTextureName("orecoremin:"+name);
 		setCreativeTab(OreCoreMin.tabOreCoreMin);
 	}
 

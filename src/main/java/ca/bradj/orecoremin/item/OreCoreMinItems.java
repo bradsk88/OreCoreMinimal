@@ -1,7 +1,5 @@
 package ca.bradj.orecoremin.item;
 
-import ca.bradj.forge.StandardElement;
-
 /**
  * This class exists to provide a centralized access point for mods to access
  * the OreCore-Minimum items, while protecting those items from being changed
@@ -13,7 +11,7 @@ public class OreCoreMinItems {
         return Aluminum.getInstance();
     }
 
-    public static StandardElement copper() {
+    public static Copper copper() {
         return Copper.getInstance();
     }
 
@@ -41,4 +39,8 @@ public class OreCoreMinItems {
         return Tin.getInstance();
     }
 
+    public static void registerRenders() {
+        Aluminum.registerRenders();
+    }
 }
+

@@ -4,7 +4,6 @@ import net.minecraft.block.Block;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;
-import ca.bradj.forge.OreCoreRegistration;
 import ca.bradj.orecoremin.item.gold.GoldBlockInferior;
 import ca.bradj.orecoremin.item.gold.GoldDust;
 import ca.bradj.orecoremin.item.gold.GoldGravel;
@@ -35,9 +34,9 @@ public class Gold implements VanillaPlus {
     }
 
     public static void preInit() {
-        OreCoreMinItemsRepo.goldInferior = OreCoreRegistration.registerBlock(new GoldBlockInferior(), GOLD_INFERIOR_NAME);
-        OreCoreMinItemsRepo.goldDust = OreCoreRegistration.registerItem(new GoldDust(), GOLD_DUST_NAME);
-        OreCoreMinItemsRepo.goldGravel = OreCoreRegistration.registerBlock(new GoldGravel(), GOLD_GRAVEL_NAME);
+//        OreCoreMinItemsRepo.goldInferior = OreCoreRegistration.registerBlock(new GoldBlockInferior(), GOLD_INFERIOR_NAME);
+//        OreCoreMinItemsRepo.goldDust = OreCoreRegistration.registerItem(new GoldDust(), GOLD_DUST_NAME);
+//        OreCoreMinItemsRepo.goldGravel = OreCoreRegistration.registerBlock(new GoldGravel(), GOLD_GRAVEL_NAME);
 
         OreDictionary.registerOre(GOLD_DUST_DICT, OreCoreMinItemsRepo.goldDust);
         OreDictionary.registerOre(GOLD_INFERIOR_DICT, OreCoreMinItemsRepo.goldInferior);
@@ -45,14 +44,14 @@ public class Gold implements VanillaPlus {
     }
 
     public static void init() {
-        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.goldDust, Items.gold_ingot, 1);
-        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.goldGravel, Items.gold_ingot, 1);
-        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.goldInferior, Items.gold_nugget, 3);
+//        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.goldDust, Items.gold_ingot, 1);
+//        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.goldGravel, Items.gold_ingot, 1);
+//        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.goldInferior, Items.gold_nugget, 3);
     }
 
     //@formatter:off
     @Override public Item asDust() { return OreCoreMinItemsRepo.goldDust; }
-    @Override public Item asNugget() { return Items.gold_nugget; }
+    @Override public Item asNugget() { return Items.GOLD_NUGGET; }
     @Override public Block asGravel() { return OreCoreMinItemsRepo.goldGravel; }
     @Override public Block asInferior() { return OreCoreMinItemsRepo.goldInferior; }
 

@@ -1,8 +1,12 @@
 package ca.bradj.orecoremin.item.tin;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import ca.bradj.orecoremin.item.OreCoreMinItems;
 import ca.bradj.orecoremin.item.base.GravelBlock;
@@ -18,7 +22,7 @@ public class TinGravel extends GravelBlock {
 	}
 
 	@Override
-	public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune) {
+	public List<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
 		return Lists.newArrayList(new ItemStack(OreCoreMinItems.tin().asDust(), 1));
 	}
 

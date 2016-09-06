@@ -3,43 +3,42 @@ package ca.bradj.orecoremin;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import ca.bradj.orecoremin.item.OreCoreMinItems;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod(modid = OreCoreMin.MODID, version = OreCoreMin.VERSION)
+@Mod(modid = OreCoreMin.MODID, version = OreCoreMin.VERSION, acceptedMinecraftVersions = "[1.10.2]")
 public class OreCoreMin {
 
     @SidedProxy(clientSide = "ca.bradj.orecoremin.ClientProxy", serverSide = "ca.bradj.orecoremin.ServerProxy")
     public static CommonProxy proxy;
 
     public static final String MODID = "OreCoreMin";
-    public static final String VERSION = "1.0.2";
+    public static final String VERSION = "2.0.0";
 
     public static CreativeTabs tabOreCoreMin = new CreativeTabs("tabOreCoreMin") {
         @Override
         @SideOnly(Side.CLIENT)
         public Item getTabIconItem() {
-            return OreCoreMinItems.copper().asIngot();
+            return OreCoreMinItems.aluminum().asIngot();
         }
     };
 
-    @EventHandler
+    @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
         proxy.preInit(e);
     }
 
-    @EventHandler
+    @Mod.EventHandler
     public void init(@SuppressWarnings("unused") FMLInitializationEvent e) {
         proxy.init();
     }
 
-    @EventHandler
+    @Mod.EventHandler
     public void postInit(@SuppressWarnings("unused") FMLPostInitializationEvent e) {
         proxy.postInit();
     }

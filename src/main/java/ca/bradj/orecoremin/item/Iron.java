@@ -4,7 +4,6 @@ import net.minecraft.block.Block;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraftforge.oredict.OreDictionary;
-import ca.bradj.forge.OreCoreRegistration;
 import ca.bradj.orecoremin.item.iron.IronBlockInferior;
 import ca.bradj.orecoremin.item.iron.IronDust;
 import ca.bradj.orecoremin.item.iron.IronGravel;
@@ -38,25 +37,25 @@ public class Iron implements VanillaPlus {
     }
 
     public static void preInit() {
-        OreCoreMinItemsRepo.ironInferior = OreCoreRegistration.registerBlock(new IronBlockInferior(), IRON_INFERIOR_NAME);
-        OreCoreMinItemsRepo.ironDust = OreCoreRegistration.registerItem(new IronDust(), IRON_DUST_NAME);
-        OreCoreMinItemsRepo.ironNugget = OreCoreRegistration.registerItem(new IronNugget(), IRON_NUGGET_NAME);
-        OreCoreMinItemsRepo.ironGravel = OreCoreRegistration.registerBlock(new IronGravel(), IRON_GRAVEL_NAME);
-
-        OreDictionary.registerOre(IRON_DUST_DICT, OreCoreMinItemsRepo.ironDust);
-        OreDictionary.registerOre(IRON_NUGGET_DICT, OreCoreMinItemsRepo.ironNugget);
-        OreDictionary.registerOre(IRON_INFERIOR_DICT, OreCoreMinItemsRepo.ironInferior);
-        OreDictionary.registerOre(IRON_GRAVEL_DICT, OreCoreMinItemsRepo.ironGravel);
+//        OreCoreMinItemsRepo.ironInferior = OreCoreRegistration.registerBlock(new IronBlockInferior(), IRON_INFERIOR_NAME);
+//        OreCoreMinItemsRepo.ironDust = OreCoreRegistration.registerItem(new IronDust(), IRON_DUST_NAME);
+//        OreCoreMinItemsRepo.ironNugget = OreCoreRegistration.registerItem(new IronNugget(), IRON_NUGGET_NAME);
+//        OreCoreMinItemsRepo.ironGravel = OreCoreRegistration.registerBlock(new IronGravel(), IRON_GRAVEL_NAME);
+//
+//        OreDictionary.registerOre(IRON_DUST_DICT, OreCoreMinItemsRepo.ironDust);
+//        OreDictionary.registerOre(IRON_NUGGET_DICT, OreCoreMinItemsRepo.ironNugget);
+//        OreDictionary.registerOre(IRON_INFERIOR_DICT, OreCoreMinItemsRepo.ironInferior);
+//        OreDictionary.registerOre(IRON_GRAVEL_DICT, OreCoreMinItemsRepo.ironGravel);
     }
 
     public static void init() {
-        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.ironDust, Items.iron_ingot, 1);
-
-        OreCoreRegistration.nuggetToIngotStandard(OreCoreMinItems.iron().asNugget(), IRON_NUGGET_DICT, Items.iron_ingot);
-        OreCoreRegistration.ingotToNuggetStandard(Items.iron_ingot, IRON_INGOT_DICT, OreCoreMinItemsRepo.ironNugget);
-
-        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.ironGravel, Items.iron_ingot, 1);
-        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.ironInferior, OreCoreMinItemsRepo.ironNugget, 3);
+//        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.ironDust, Items.iron_ingot, 1);
+//
+//        OreCoreRegistration.nuggetToIngotStandard(OreCoreMinItems.iron().asNugget(), IRON_NUGGET_DICT, Items.iron_ingot);
+//        OreCoreRegistration.ingotToNuggetStandard(Items.iron_ingot, IRON_INGOT_DICT, OreCoreMinItemsRepo.ironNugget);
+//
+//        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.ironGravel, Items.iron_ingot, 1);
+//        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.ironInferior, OreCoreMinItemsRepo.ironNugget, 3);
     }
 
     //@formatter:off

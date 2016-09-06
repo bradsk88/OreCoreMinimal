@@ -7,9 +7,9 @@ public abstract class GravelBlock extends BlockFalling {
 
 	protected GravelBlock(String name) {
 		super();
-		setBlockTextureName("orecoremin:"+name);
+//		setBlockTextureName("orecoremin:"+name);
 		setCreativeTab(OreCoreMin.tabOreCoreMin);
-		setStepSound(soundTypeGravel);
+//		setStepSound(soundTypeGravel);
 	}
 
 }

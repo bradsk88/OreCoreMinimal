@@ -6,7 +6,7 @@ tile.Bauxite.Ore.name=Bauxite Ore
 tile.Bauxite.Gravel.name=Loose Bauxite Ore
 item.Aluminum.Dust.name=Aluminum Dust
 item.Aluminum.Nugget.name=Aluminum Nugget
-item.Aluminum.Ingot.name=Aluminum Ingot
+item.aluminumIngot.name=Aluminum Ingot
 tile.Aluminum.Block.name=Block of Aluminum
 
 tile.Copper.name=Copper Ore
