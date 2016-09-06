@@ -8,6 +8,8 @@ public class OreCoreMinBlock extends Block {
 
     protected OreCoreMinBlock(Material arg0, String textureName) {
         super(arg0);
+        setUnlocalizedName(textureName);
+        setRegistryName(textureName);
 //        setBlockTextureName("orecoremin:"+textureName);
         setCreativeTab(OreCoreMin.tabOreCoreMin);
     }

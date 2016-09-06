@@ -1,6 +1,7 @@
 package ca.bradj.orecoremin.item;
 
 import ca.bradj.orecoremin.OreCoreMin;
+import ca.bradj.orecoremin.util.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -53,8 +54,8 @@ public class Aluminum implements OreCoreMinForgeable, OreCoreMinElement {
 
     public static void preInit() {
 
-        register();
-//        OreCoreMinItemsRepo.bauxite = OreCoreRegistration.registerBlock(new BauxiteOreBlock(), BAUXITE_NAME);
+        OreCoreMinItemsRepo.bauxite = Registration.register(new BauxiteOreBlock());
+        OreCoreMinItemsRepo.aluminumIngot = Registration.register(new AluminumIngot());
 //        OreCoreMinItemsRepo.bauxiteGravel = OreCoreRegistration.registerBlock(new BauxiteGravelBlock(), BAUXITE_GRAVEL_NAME);
 //        OreCoreMinItemsRepo.aluminumDust = OreCoreRegistration.registerItem(new AluminumDust(), ALUMINUM_DUST_NAME);
 //        OreCoreMinItemsRepo.aluminumNugget = OreCoreRegistration.registerItem(new AluminumNugget(), ALUMINUM_NUGGET_NAME);
@@ -97,18 +98,9 @@ public class Aluminum implements OreCoreMinForgeable, OreCoreMinElement {
 //        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.bauxiteGravel, OreCoreMinItemsRepo.aluminumIngot, 1);
     }
 
-    private static void register() {
-        OreCoreMinItemsRepo.aluminumIngot = new AluminumIngot();
-        GameRegistry.register(OreCoreMinItemsRepo.aluminumIngot);
-    }
-
     public static void registerRenders() {
-        registerRender(OreCoreMinItemsRepo.aluminumIngot);
-    }
-
-    public static void registerRender(Item item) {
-        ModelResourceLocation location = new ModelResourceLocation(item.getRegistryName(), "inventory");
-        ModelLoader.setCustomModelResourceLocation(item, 0, location);
+        Registration.registerRender(OreCoreMinItemsRepo.aluminumIngot);
+        Registration.registerRender(OreCoreMinItemsRepo.bauxite);
     }
 
     //@formatter:off

@@ -84,7 +84,7 @@ class OreCoreMinItemsRepo {
     }
 
     public static void init() {
-        Aluminum.init();
+//        Aluminum.init();
 //        Copper.init();
 //        Copper2Carbonate.init();
 //        Gold.init();
@@ -92,4 +92,7 @@ class OreCoreMinItemsRepo {
 //        Tin.init();
     }
 
+    public static void registerRenders() {
+        Aluminum.registerRenders();
+    }
 }

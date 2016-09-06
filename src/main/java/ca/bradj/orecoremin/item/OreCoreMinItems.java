@@ -40,7 +40,7 @@ public class OreCoreMinItems {
     }
 
     public static void registerRenders() {
-        Aluminum.registerRenders();
+        OreCoreMinItemsRepo.registerRenders();
     }
 }
 
