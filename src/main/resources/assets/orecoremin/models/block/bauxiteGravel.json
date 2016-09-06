@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "orecoremin:blocks/bauxite"
+    "all": "orecoremin:blocks/bauxiteGravel"
   }
 }

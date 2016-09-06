@@ -55,15 +55,15 @@ public class Aluminum implements OreCoreMinForgeable, OreCoreMinElement {
     public static void preInit() {
 
         OreCoreMinItemsRepo.bauxite = Registration.register(new BauxiteOreBlock());
+        OreCoreMinItemsRepo.bauxiteGravel = Registration.register(new BauxiteGravelBlock());
+        OreCoreMinItemsRepo.aluminumBlock = Registration.register(new AluminumPureBlock());
+        OreCoreMinItemsRepo.aluminumDust = Registration.register(new AluminumDust());
         OreCoreMinItemsRepo.aluminumIngot = Registration.register(new AluminumIngot());
-//        OreCoreMinItemsRepo.bauxiteGravel = OreCoreRegistration.registerBlock(new BauxiteGravelBlock(), BAUXITE_GRAVEL_NAME);
-//        OreCoreMinItemsRepo.aluminumDust = OreCoreRegistration.registerItem(new AluminumDust(), ALUMINUM_DUST_NAME);
-//        OreCoreMinItemsRepo.aluminumNugget = OreCoreRegistration.registerItem(new AluminumNugget(), ALUMINUM_NUGGET_NAME);
-//        OreCoreMinItemsRepo.aluminumBlock = OreCoreRegistration.registerBlock(new AluminumPureBlock(), ALUMINUM_BLOCK_NAME);
+        OreCoreMinItemsRepo.aluminumNugget = Registration.register(new AluminumNugget());
 //
-//        OreDictionary.registerOre(BAUXITE_DICT, new ItemStack(OreCoreMinItemsRepo.bauxite, 1));
-//        OreDictionary.registerOre(BAUXITE_DICT2, new ItemStack(OreCoreMinItemsRepo.bauxite, 1));
-//        OreDictionary.registerOre(BAUXITE_DICT3, new ItemStack(OreCoreMinItemsRepo.bauxite, 1));
+        OreDictionary.registerOre("oreBauxite", new ItemStack(OreCoreMinItemsRepo.bauxite, 1));
+        OreDictionary.registerOre("oreAluminum", new ItemStack(OreCoreMinItemsRepo.bauxite, 1));
+        OreDictionary.registerOre("oreAluminium", new ItemStack(OreCoreMinItemsRepo.bauxite, 1));
 //
 //        OreDictionary.registerOre(ALUMINUM_DUST_DICT, OreCoreMinItemsRepo.aluminumDust);
 //        OreDictionary.registerOre(ALUMINUM_DUST_DICT2, OreCoreMinItemsRepo.aluminumDust);
@@ -99,8 +99,12 @@ public class Aluminum implements OreCoreMinForgeable, OreCoreMinElement {
     }
 
     public static void registerRenders() {
-        Registration.registerRender(OreCoreMinItemsRepo.aluminumIngot);
         Registration.registerRender(OreCoreMinItemsRepo.bauxite);
+        Registration.registerRender(OreCoreMinItemsRepo.bauxiteGravel);
+        Registration.registerRender(OreCoreMinItemsRepo.aluminumBlock);
+        Registration.registerRender(OreCoreMinItemsRepo.aluminumDust);
+        Registration.registerRender(OreCoreMinItemsRepo.aluminumIngot);
+        Registration.registerRender(OreCoreMinItemsRepo.aluminumNugget);
     }
 
     //@formatter:off
