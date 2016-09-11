@@ -85,14 +85,4 @@ public class Copper implements OreCoreMinMaterial {
 	@Override public Item asNugget() { return OreCoreMinItemsRepo.copperNugget; }
 	@Override public OreBlock asOre() { return OreCoreMinItemsRepo.copper; }
 	@Override public Block asPureBlock() { return OreCoreMinItemsRepo.copperBlock; }
-
-    public static void registerRenders() {
-        Registration.registerRender(OreCoreMinItemsRepo.copper);
-        Registration.registerRender(OreCoreMinItemsRepo.copperInferior);
-        Registration.registerRender(OreCoreMinItemsRepo.copperGravel);
-        Registration.registerRender(OreCoreMinItemsRepo.copperBlock);
-        Registration.registerRender(OreCoreMinItemsRepo.copperDust);
-        Registration.registerRender(OreCoreMinItemsRepo.copperIngot);
-        Registration.registerRender(OreCoreMinItemsRepo.copperNugget);
-    }
 }

@@ -63,9 +63,10 @@ public class Iron implements VanillaPlus {
     }
 
     public static void registerRenders() {
-        Registration.registerRender(OreCoreMinItemsRepo.goldInferior);
-        Registration.registerRender(OreCoreMinItemsRepo.goldGravel);
-        Registration.registerRender(OreCoreMinItemsRepo.goldDust);
+        Registration.registerRender(OreCoreMinItemsRepo.ironInferior);
+        Registration.registerRender(OreCoreMinItemsRepo.ironGravel);
+        Registration.registerRender(OreCoreMinItemsRepo.ironNugget);
+        Registration.registerRender(OreCoreMinItemsRepo.ironDust);
     }
 
     //@formatter:off

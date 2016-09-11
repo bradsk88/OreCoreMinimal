@@ -1,15 +1,11 @@
 package ca.bradj.orecoremin.item;
 
-import ca.bradj.orecoremin.OreCoreMin;
-import ca.bradj.orecoremin.item.base.OreBlock;
-import ca.bradj.orecoremin.item.base.OreCoreMinBlockInterface;
+import ca.bradj.orecoremin.item.base.GravelBlock;
+import ca.bradj.orecoremin.item.base.OreCoreMinBlock;
 import ca.bradj.orecoremin.util.Registration;
 import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 import ca.bradj.orecoremin.item.aluminum.AluminumDust;
@@ -100,22 +96,13 @@ public class Aluminum implements OreCoreMinMaterial {
         GameRegistry.addSmelting(OreCoreMinItemsRepo.bauxiteGravel, new ItemStack(OreCoreMinItemsRepo.aluminumIngot, 1), 0);
     }
 
-    public static void registerRenders() {
-        Registration.registerRender(OreCoreMinItemsRepo.bauxite);
-        Registration.registerRender(OreCoreMinItemsRepo.bauxiteGravel);
-        Registration.registerRender(OreCoreMinItemsRepo.aluminumBlock);
-        Registration.registerRender(OreCoreMinItemsRepo.aluminumDust);
-        Registration.registerRender(OreCoreMinItemsRepo.aluminumIngot);
-        Registration.registerRender(OreCoreMinItemsRepo.aluminumNugget);
-    }
-
     //@formatter:off
     @Override public Item asDust() { return OreCoreMinItemsRepo.aluminumDust; }
-    @Override public OreCoreMinBlockInterface asGravel() { return OreCoreMinItemsRepo.bauxiteGravel; }
-    @Override public OreCoreMinBlockInterface asInferior() { return OreCoreMinItemsRepo.bauxite; } //TODO: Add inferior?
+    @Override public GravelBlock asGravel() { return OreCoreMinItemsRepo.bauxiteGravel; }
+    @Override public OreCoreMinBlock asInferior() { return OreCoreMinItemsRepo.bauxite; } //TODO: Add inferior?
     @Override public Item asIngot() { return OreCoreMinItemsRepo.aluminumIngot; }
     @Override public Item asNugget() { return OreCoreMinItemsRepo.aluminumNugget; }
-    @Override public OreCoreMinBlockInterface asOre() { return OreCoreMinItemsRepo.bauxite; }
+    @Override public OreCoreMinBlock asOre() { return OreCoreMinItemsRepo.bauxite; }
     @Override public Block asPureBlock() { return OreCoreMinItemsRepo.aluminumBlock; }
 
 }

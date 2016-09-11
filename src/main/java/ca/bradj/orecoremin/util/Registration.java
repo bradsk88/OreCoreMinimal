@@ -1,5 +1,6 @@
 package ca.bradj.orecoremin.util;
 
+import ca.bradj.orecoremin.item.OreCoreMinElement;
 import ca.bradj.orecoremin.item.OreCoreMinForgeable;
 import ca.bradj.orecoremin.item.OreCoreMinMaterial;
 import net.minecraft.block.Block;
@@ -11,6 +12,17 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Registration {
+
+    public static void registerRenders(OreCoreMinMaterial material) {
+        registerRender(material.asOre());
+        registerRender(material.asInferior());
+        registerRender(material.asGravel());
+        registerRender(material.asPureBlock());
+        registerRender(material.asDust());
+        registerRender(material.asIngot());
+        registerRender(material.asNugget());
+    }
+
     public static void registerRender(Item item) {
         ModelResourceLocation location = new ModelResourceLocation(item.getRegistryName(), "inventory");
         ModelLoader.setCustomModelResourceLocation(item, 0, location);
@@ -51,11 +63,11 @@ public class Registration {
         GameRegistry.addRecipe(new ItemStack(ingotInstance, 9), new Object[] {"#", '#', blockInstance});
     }
 
-    public static void initMaterialRecipes(OreCoreMinMaterial forgeable) {
-        initForgeableRecipes(forgeable);
-        GameRegistry.addSmelting(forgeable.asInferior(), new ItemStack(forgeable.asNugget(), 4), 0);
-        GameRegistry.addSmelting(forgeable.asOre(), new ItemStack(forgeable.asIngot(), 1), 0);
-        GameRegistry.addSmelting(forgeable.asGravel(), new ItemStack(forgeable.asIngot(), 1), 0);
+    public static void initMaterialRecipes(OreCoreMinMaterial asForgeable) {
+        initForgeableRecipes(asForgeable);
+        GameRegistry.addSmelting(asForgeable.asInferior(), new ItemStack(asForgeable.asNugget(), 4), 0);
+        GameRegistry.addSmelting(asForgeable.asOre(), new ItemStack(asForgeable.asIngot(), 1), 0);
+        GameRegistry.addSmelting(asForgeable.asGravel(), new ItemStack(asForgeable.asIngot(), 1), 0);
     }
 
     public static void initForgeableRecipes(OreCoreMinForgeable forgeable) {

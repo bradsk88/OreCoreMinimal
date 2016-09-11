@@ -1,13 +1,13 @@
 package ca.bradj.orecoremin.item;
 
-import ca.bradj.orecoremin.item.base.OreCoreMinBlockInterface;
-import net.minecraft.block.Block;
+import ca.bradj.orecoremin.item.base.GravelBlock;
+import ca.bradj.orecoremin.item.base.OreCoreMinBlock;
 
-interface OreCoreMinElement {
+public interface OreCoreMinElement {
 
-    OreCoreMinBlockInterface asGravel();
+    GravelBlock asGravel();
 
-    OreCoreMinBlockInterface asInferior();
+    OreCoreMinBlock asInferior();
 
-    OreCoreMinBlockInterface asOre();
+    OreCoreMinBlock asOre();
 }

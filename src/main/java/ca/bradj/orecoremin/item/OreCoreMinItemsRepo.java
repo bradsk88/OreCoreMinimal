@@ -31,11 +31,14 @@ import ca.bradj.orecoremin.item.tin.TinGravel;
 import ca.bradj.orecoremin.item.tin.TinIngot;
 import ca.bradj.orecoremin.item.tin.TinNugget;
 import ca.bradj.orecoremin.item.tin.TinPureBlock;
+import ca.bradj.orecoremin.util.Registration;
 
 /**
  * Centralized location for all OreCore items.
  */
 class OreCoreMinItemsRepo {
+
+    private static Aluminum aluminum;
 
     static CopperBlock copper;
     static CopperIngot copperIngot;
@@ -93,11 +96,11 @@ class OreCoreMinItemsRepo {
     }
 
     public static void registerRenders() {
-        Aluminum.registerRenders();
-        Copper.registerRenders();
+        Registration.registerRenders(OreCoreMinItems.aluminum());
+        Registration.registerRenders(OreCoreMinItems.copper());
+        Registration.registerRenders(OreCoreMinItems.tin());
         Copper2Carbonate.registerRenders();
         Gold.registerRenders();
         Iron.registerRenders();
-        Tin.registerRenders();
     }
 }

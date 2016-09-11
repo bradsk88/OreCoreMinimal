@@ -5,7 +5,7 @@ import ca.bradj.orecoremin.item.base.OreBlock;
 public class TinBlock extends OreBlock {
 
     public TinBlock() {
-        super("tin");
+        super("tinOre");
         setHardness(2.5f);
         this.setHarvestLevel("pickaxe", 2);
     }

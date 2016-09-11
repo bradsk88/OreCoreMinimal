@@ -75,16 +75,6 @@ public class Tin implements OreCoreMinMaterial {
         Registration.initMaterialRecipes(this);
     }
 
-    public static void registerRenders() {
-        Registration.registerRender(OreCoreMinItemsRepo.copper);
-        Registration.registerRender(OreCoreMinItemsRepo.copperInferior);
-        Registration.registerRender(OreCoreMinItemsRepo.copperGravel);
-        Registration.registerRender(OreCoreMinItemsRepo.copperBlock);
-        Registration.registerRender(OreCoreMinItemsRepo.copperDust);
-        Registration.registerRender(OreCoreMinItemsRepo.copperIngot);
-        Registration.registerRender(OreCoreMinItemsRepo.copperNugget);
-    }
-
     //@formatter:off
 	@Override public Item asDust() { return OreCoreMinItemsRepo.tinDust; }
 	@Override public GravelBlock asGravel() { return OreCoreMinItemsRepo.tinGravel; }

@@ -36,9 +36,9 @@ public class OreCoreMinWorldGen implements IWorldGenerator {
 		logOreGen(config, logger, "goldInferior");
 		logOreGen(config, logger, "ironGravel");
 		logOreGen(config, logger, "ironInferior");
-		logOreGen(config, logger, "tin");
+		logOreGen(config, logger, "tinOre");
 		logOreGen(config, logger, "tinGravel");
-		logOreGen(config, logger, "tinInferior");
+		logOreGen(config, logger, "tinOreInferior");
 	}
 
 	private void logOreGen(Configuration config, Logger logger, String ore) {

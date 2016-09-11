@@ -5,7 +5,7 @@ import ca.bradj.orecoremin.item.base.OreBlock;
 public class IronBlockInferior extends OreBlock {
 
 	public IronBlockInferior() {
-		super("ironInferior");
+		super("ironOreInferior");
 		setHardness(2f);
 		this.setHarvestLevel("pickaxe", 0);
 	}
