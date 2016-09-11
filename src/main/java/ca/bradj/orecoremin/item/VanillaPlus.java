@@ -1,5 +1,6 @@
 package ca.bradj.orecoremin.item;
 
+import ca.bradj.orecoremin.item.base.OreCoreMinBlockInterface;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
@@ -12,8 +13,8 @@ public interface VanillaPlus {
 
     Item asNugget();
 
-    Block asGravel();
+    OreCoreMinBlockInterface asGravel();
 
-    Block asInferior();
+    OreCoreMinBlockInterface asInferior();
 
 }

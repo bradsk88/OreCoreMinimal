@@ -20,10 +20,10 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
 
         logger = e.getModLog();
-//        config = new Configuration(e.getSuggestedConfigurationFile());
-//        config.load();
+        config = new Configuration(e.getSuggestedConfigurationFile());
+        config.load();
         OreCoreMinItems.preInit();
-//        WORLD_GEN = new OreCoreMinWorldGen(config, e.getModLog());
+        WORLD_GEN = new OreCoreMinWorldGen(config, e.getModLog());
     }
 
     public void init() {
@@ -33,8 +33,8 @@ public class CommonProxy {
 //            aggressive = true;
 //        }
         OreCoreMinItems.init();
-//        config.save();
-//        GameRegistry.registerWorldGenerator(WORLD_GEN, 1);
+        config.save();
+        GameRegistry.registerWorldGenerator(WORLD_GEN, 1);
     }
 
     public void postInit() {

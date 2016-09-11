@@ -5,7 +5,7 @@ import ca.bradj.orecoremin.item.base.OreBlock;
 public class CopperBlock extends OreBlock {
 
 	public CopperBlock() {
-		super("copper");
+		super("copperOre");
 		setHardness(2.5f);
 		this.setHarvestLevel("pickaxe", 2);
 	}

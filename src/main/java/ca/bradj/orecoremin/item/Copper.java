@@ -1,6 +1,6 @@
 package ca.bradj.orecoremin.item;
 
-import ca.bradj.orecoremin.OreCoreMin;
+import ca.bradj.orecoremin.util.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import ca.bradj.orecoremin.item.base.GravelBlock;
@@ -12,10 +12,8 @@ import ca.bradj.orecoremin.item.copper.CopperGravel;
 import ca.bradj.orecoremin.item.copper.CopperIngot;
 import ca.bradj.orecoremin.item.copper.CopperNugget;
 import ca.bradj.orecoremin.item.copper.CopperPureBlock;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class Copper implements OreCoreMinElement, OreCoreMinForgeable {
+public class Copper implements OreCoreMinMaterial {
 
     public static final int COPPER_TOP_LEVEL = 50;
     public static final int COPPER_GRAVEL_TOP_LEVEL = 50;
@@ -47,13 +45,13 @@ public class Copper implements OreCoreMinElement, OreCoreMinForgeable {
 //        }
 //    };
 
-    private static final String COPPER_NAME = "Copper";
-    private static final String COPPER_INFERIOR_NAME = "Inferior.Copper";
-    private static final String COPPER_INGOT_NAME = "Copper.Ingot";
-    private static final String COPPER_NUGGET_NAME = "Copper.Nugget";
-    private static final String COPPER_DUST_NAME = "Copper.Dust";
-    private static final String COPPER_GRAVEL_NAME = "Copper.Gravel";
-    private static final String COPPER_BLOCK_NAME = "Copper.Block";
+//    private static final String COPPER_NAME = "Copper";
+//    private static final String COPPER_INFERIOR_NAME = "Inferior.Copper";
+//    private static final String COPPER_INGOT_NAME = "Copper.Ingot";
+//    private static final String COPPER_NUGGET_NAME = "Copper.Nugget";
+//    private static final String COPPER_DUST_NAME = "Copper.Dust";
+//    private static final String COPPER_GRAVEL_NAME = "Copper.Gravel";
+//    private static final String COPPER_BLOCK_NAME = "Copper.Block";
 
     public static void preInit() {
         getInstance().doPreInit();
@@ -64,19 +62,19 @@ public class Copper implements OreCoreMinElement, OreCoreMinForgeable {
     }
 
     private void doPreInit() {
-//        OreCoreMinItemsRepo.copper = OreCoreMin.proxy.registerBlock(new CopperBlock(), COPPER_NAME);
-//        OreCoreMinItemsRepo.copperInferior = OreCoreRegistration.registerBlock(new CopperBlockInferior(), COPPER_INFERIOR_NAME);
-//        OreCoreMinItemsRepo.copperIngot = OreCoreRegistration.registerItem(new CopperIngot(), COPPER_INGOT_NAME);
-//        OreCoreMinItemsRepo.copperNugget = OreCoreRegistration.registerItem(new CopperNugget(), COPPER_NUGGET_NAME);
-//        OreCoreMinItemsRepo.copperDust = OreCoreRegistration.registerItem(new CopperDust(), COPPER_DUST_NAME);
-//        OreCoreMinItemsRepo.copperGravel = OreCoreRegistration.registerBlock(new CopperGravel(), COPPER_GRAVEL_NAME);
-//        OreCoreMinItemsRepo.copperBlock = OreCoreRegistration.registerBlock(new CopperPureBlock(), COPPER_BLOCK_NAME);
+        OreCoreMinItemsRepo.copper = Registration.register(new CopperBlock());
+        OreCoreMinItemsRepo.copperInferior = Registration.register(new CopperBlockInferior());
+        OreCoreMinItemsRepo.copperIngot = Registration.register(new CopperIngot());
+        OreCoreMinItemsRepo.copperNugget = Registration.register(new CopperNugget());
+        OreCoreMinItemsRepo.copperDust = Registration.register(new CopperDust());
+        OreCoreMinItemsRepo.copperGravel = Registration.register(new CopperGravel());
+        OreCoreMinItemsRepo.copperBlock = Registration.register(new CopperPureBlock());
 
 //        StandardElementRegistrations.initDictionary(this, DICT);
     }
 
     public void doInit() {
-//        StandardElementRegistrations.initRecipes(this, DICT);
+        Registration.initMaterialRecipes(this);
     }
 
     //@formatter:off
@@ -88,4 +86,13 @@ public class Copper implements OreCoreMinElement, OreCoreMinForgeable {
 	@Override public OreBlock asOre() { return OreCoreMinItemsRepo.copper; }
 	@Override public Block asPureBlock() { return OreCoreMinItemsRepo.copperBlock; }
 
+    public static void registerRenders() {
+        Registration.registerRender(OreCoreMinItemsRepo.copper);
+        Registration.registerRender(OreCoreMinItemsRepo.copperInferior);
+        Registration.registerRender(OreCoreMinItemsRepo.copperGravel);
+        Registration.registerRender(OreCoreMinItemsRepo.copperBlock);
+        Registration.registerRender(OreCoreMinItemsRepo.copperDust);
+        Registration.registerRender(OreCoreMinItemsRepo.copperIngot);
+        Registration.registerRender(OreCoreMinItemsRepo.copperNugget);
+    }
 }

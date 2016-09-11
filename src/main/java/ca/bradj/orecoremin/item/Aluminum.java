@@ -1,6 +1,8 @@
 package ca.bradj.orecoremin.item;
 
 import ca.bradj.orecoremin.OreCoreMin;
+import ca.bradj.orecoremin.item.base.OreBlock;
+import ca.bradj.orecoremin.item.base.OreCoreMinBlockInterface;
 import ca.bradj.orecoremin.util.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -17,7 +19,7 @@ import ca.bradj.orecoremin.item.aluminum.AluminumPureBlock;
 import ca.bradj.orecoremin.item.aluminum.BauxiteGravelBlock;
 import ca.bradj.orecoremin.item.aluminum.BauxiteOreBlock;
 
-public class Aluminum implements OreCoreMinForgeable, OreCoreMinElement {
+public class Aluminum implements OreCoreMinMaterial {
 
 //    private static final String BAUXITE_DICT = OreCoreRegistration.registerDictString("oreBauxite");
 //    private static final String BAUXITE_DICT2 = OreCoreRegistration.registerDictString("oreAluminum");
@@ -31,12 +33,12 @@ public class Aluminum implements OreCoreMinForgeable, OreCoreMinElement {
 //    private static final String ALUMINUM_BLOCK_DICT = OreCoreRegistration.registerDictString("blockAluminum");
 //    private static final String ALUMINUM_BLOCK_DICT2 = OreCoreRegistration.registerDictString("blockAluminium");
 
-    private static final String BAUXITE_NAME = "Bauxite.Ore";
-    private static final String BAUXITE_GRAVEL_NAME = "Bauxite.Gravel";
-    private static final String ALUMINUM_DUST_NAME = "Aluminum.Dust";
-    private static final String ALUMINUM_NUGGET_NAME = "Aluminum.Nugget";
-    private static final String ALUMINUM_INGOT_NAME = "Aluminum.Ingot";
-    private static final String ALUMINUM_BLOCK_NAME = "Aluminum.Block";
+//    private static final String BAUXITE_NAME = "Bauxite.Ore";
+//    private static final String BAUXITE_GRAVEL_NAME = "Bauxite.Gravel";
+//    private static final String ALUMINUM_DUST_NAME = "Aluminum.Dust";
+//    private static final String ALUMINUM_NUGGET_NAME = "Aluminum.Nugget";
+//    private static final String ALUMINUM_INGOT_NAME = "Aluminum.Ingot";
+//    private static final String ALUMINUM_BLOCK_NAME = "Aluminum.Block";
 
     public static final int BAUXITE_TOP_LEVEL = 50;
 
@@ -81,21 +83,21 @@ public class Aluminum implements OreCoreMinForgeable, OreCoreMinElement {
 
     public static void init() {
 
-//        OreCoreRegistration.nuggetToIngotStandard(OreCoreMinItems.aluminum().asNugget(), ALUMINUM_NUGGET_DICT, OreCoreMinItemsRepo.aluminumIngot);
-//        OreCoreRegistration.nuggetToIngotStandard(OreCoreMinItems.aluminum().asNugget(), ALUMINUM_NUGGET_DICT2, OreCoreMinItemsRepo.aluminumIngot);
+        Registration.nuggetToIngotStandard(OreCoreMinItems.aluminum().asNugget(), OreCoreMinItemsRepo.aluminumIngot);
+//        Registration.nuggetToIngotStandard(OreCoreMinItems.aluminum().asNugget(), ALUMINUM_NUGGET_DICT2, OreCoreMinItemsRepo.aluminumIngot);
 //
-//        OreCoreRegistration.ingotToNuggetStandard(OreCoreMinItems.aluminum().asIngot(), ALUMINUM_INGOT_DICT, OreCoreMinItemsRepo.aluminumNugget);
+        Registration.ingotToNuggetStandard(OreCoreMinItems.aluminum().asIngot(), OreCoreMinItemsRepo.aluminumNugget);
 //        OreCoreRegistration.ingotToNuggetStandard(OreCoreMinItems.aluminum().asIngot(), ALUMINUM_INGOT_DICT2, OreCoreMinItemsRepo.aluminumNugget);
 //
-//        OreCoreRegistration.ingotToBlockStandard(OreCoreMinItems.aluminum().asIngot(), ALUMINUM_INGOT_DICT, OreCoreMinItemsRepo.aluminumBlock);
+        Registration.ingotToBlockStandard(OreCoreMinItems.aluminum().asIngot(), OreCoreMinItemsRepo.aluminumBlock);
 //        OreCoreRegistration.ingotToBlockStandard(OreCoreMinItems.aluminum().asIngot(), ALUMINUM_INGOT_DICT2, OreCoreMinItemsRepo.aluminumBlock);
 //
-//        OreCoreRegistration.blockToIngotStandard(OreCoreMinItems.aluminum().asPureBlock(), ALUMINUM_BLOCK_DICT, OreCoreMinItemsRepo.aluminumIngot);
+        Registration.blockToIngotStandard(OreCoreMinItems.aluminum().asPureBlock(), OreCoreMinItemsRepo.aluminumIngot);
 //        OreCoreRegistration.blockToIngotStandard(OreCoreMinItems.aluminum().asPureBlock(), ALUMINUM_BLOCK_DICT2, OreCoreMinItemsRepo.aluminumIngot);
 //
-//        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.aluminumDust, OreCoreMinItemsRepo.aluminumNugget, 3);
-//        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.bauxite, OreCoreMinItemsRepo.aluminumIngot, 1);
-//        OreCoreRegistration.addSmelting(OreCoreMinItemsRepo.bauxiteGravel, OreCoreMinItemsRepo.aluminumIngot, 1);
+        GameRegistry.addSmelting(OreCoreMinItemsRepo.aluminumDust, new ItemStack(OreCoreMinItemsRepo.aluminumNugget, 3), 0);
+        GameRegistry.addSmelting(OreCoreMinItemsRepo.bauxite, new ItemStack(OreCoreMinItemsRepo.aluminumIngot, 1), 0);
+        GameRegistry.addSmelting(OreCoreMinItemsRepo.bauxiteGravel, new ItemStack(OreCoreMinItemsRepo.aluminumIngot, 1), 0);
     }
 
     public static void registerRenders() {
@@ -109,11 +111,11 @@ public class Aluminum implements OreCoreMinForgeable, OreCoreMinElement {
 
     //@formatter:off
     @Override public Item asDust() { return OreCoreMinItemsRepo.aluminumDust; }
-    @Override public Block asGravel() { return OreCoreMinItemsRepo.bauxiteGravel; }
-    @Override public Block asInferior() { return OreCoreMinItemsRepo.bauxite; } //TODO: Add inferior?
+    @Override public OreCoreMinBlockInterface asGravel() { return OreCoreMinItemsRepo.bauxiteGravel; }
+    @Override public OreCoreMinBlockInterface asInferior() { return OreCoreMinItemsRepo.bauxite; } //TODO: Add inferior?
     @Override public Item asIngot() { return OreCoreMinItemsRepo.aluminumIngot; }
     @Override public Item asNugget() { return OreCoreMinItemsRepo.aluminumNugget; }
-    @Override public Block asOre() { return OreCoreMinItemsRepo.bauxite; }
+    @Override public OreCoreMinBlockInterface asOre() { return OreCoreMinItemsRepo.bauxite; }
     @Override public Block asPureBlock() { return OreCoreMinItemsRepo.aluminumBlock; }
 
 }

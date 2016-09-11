@@ -76,23 +76,28 @@ class OreCoreMinItemsRepo {
 
     public static void preInit() {
         Aluminum.preInit();
-//        Copper.preInit();
-//        Copper2Carbonate.preInit();
-//        Gold.preInit();
-//        Iron.preInit();
-//        Tin.preInit();
+        Copper.preInit();
+        Copper2Carbonate.preInit();
+        Gold.preInit();
+        Iron.preInit();
+        Tin.preInit();
     }
 
     public static void init() {
-//        Aluminum.init();
-//        Copper.init();
-//        Copper2Carbonate.init();
-//        Gold.init();
-//        Iron.init();
-//        Tin.init();
+        Aluminum.init();
+        Copper.init();
+        Copper2Carbonate.init();
+        Gold.init();
+        Iron.init();
+        Tin.init();
     }
 
     public static void registerRenders() {
         Aluminum.registerRenders();
+        Copper.registerRenders();
+        Copper2Carbonate.registerRenders();
+        Gold.registerRenders();
+        Iron.registerRenders();
+        Tin.registerRenders();
     }
 }

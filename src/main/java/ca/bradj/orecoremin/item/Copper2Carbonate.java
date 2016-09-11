@@ -1,6 +1,6 @@
 package ca.bradj.orecoremin.item;
 
-import ca.bradj.orecoremin.util.DictionaryNames;
+import ca.bradj.orecoremin.util.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import ca.bradj.orecoremin.item.copper.carb.Copper2CarbonateDust;
@@ -10,10 +10,10 @@ import ca.bradj.orecoremin.item.copper.carb.Copper2CarbonatePureBlock;
 
 public class Copper2Carbonate implements OreCoreMinForgeable {
 
-    private static final String COPPER_2_CARBONATE_DUST_NAME = "Copper.II.Carbonate.Dust";
-    private static final String COPPER_2_CARBONATE_NUGGET_NAME = "Copper.II.Carbonate.Nugget";
-    private static final String COPPER_2_CARBONATE_INGOT_NAME = "Copper.II.Carbonate.Ingot";
-    private static final String COPPER_2_CARBONATE_BLOCK_NAME = "Copper.II.Carbonate.Block";
+//    private static final String COPPER_2_CARBONATE_DUST_NAME = "Copper.II.Carbonate.Dust";
+//    private static final String COPPER_2_CARBONATE_NUGGET_NAME = "Copper.II.Carbonate.Nugget";
+//    private static final String COPPER_2_CARBONATE_INGOT_NAME = "Copper.II.Carbonate.Ingot";
+//    private static final String COPPER_2_CARBONATE_BLOCK_NAME = "Copper.II.Carbonate.Block";
 
     private static Copper2Carbonate INSTANCE;
 
@@ -42,15 +42,23 @@ public class Copper2Carbonate implements OreCoreMinForgeable {
 //    };
 
     private void doPreInit() {
-//        OreCoreMinItemsRepo.copper2CarbonateDust = OreCoreRegistration.registerItem(new Copper2CarbonateDust(), COPPER_2_CARBONATE_DUST_NAME);
-//        OreCoreMinItemsRepo.copper2CarbonateNugget = OreCoreRegistration.registerItem(new Copper2CarbonateNugget(), COPPER_2_CARBONATE_NUGGET_NAME);
-//        OreCoreMinItemsRepo.copper2CarbonateIngot = OreCoreRegistration.registerItem(new Copper2CarbonateIngot(), COPPER_2_CARBONATE_INGOT_NAME);
-//        OreCoreMinItemsRepo.copper2CarbonateBlock = OreCoreRegistration.registerBlock(new Copper2CarbonatePureBlock(), COPPER_2_CARBONATE_BLOCK_NAME);
+        OreCoreMinItemsRepo.copper2CarbonateDust = Registration.register(new Copper2CarbonateDust());
+        OreCoreMinItemsRepo.copper2CarbonateNugget = Registration.register(new Copper2CarbonateNugget());
+        OreCoreMinItemsRepo.copper2CarbonateIngot = Registration.register(new Copper2CarbonateIngot());
+        OreCoreMinItemsRepo.copper2CarbonateBlock = Registration.register(new Copper2CarbonatePureBlock());
 //        StandardForgeableRegistrations.initDictionary(this, DICT);
     }
 
     private void doInit() {
-//        StandardForgeableRegistrations.initRecipes(this, DICT);
+        Registration.initForgeableRecipes(this);
+//        StandardForgeableRegistrations.initMaterialRecipes(this, DICT);
+    }
+
+    public static void registerRenders() {
+        Registration.registerRender(OreCoreMinItemsRepo.copper2CarbonateBlock);
+        Registration.registerRender(OreCoreMinItemsRepo.copper2CarbonateDust);
+        Registration.registerRender(OreCoreMinItemsRepo.copper2CarbonateIngot);
+        Registration.registerRender(OreCoreMinItemsRepo.copper2CarbonateNugget);
     }
 
     //@formatter:off

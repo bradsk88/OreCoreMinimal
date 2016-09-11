@@ -18,6 +18,7 @@ public class BauxiteGravelBlock extends GravelBlock {
 
 	public BauxiteGravelBlock() {
 		super("bauxiteGravel");
+		setHardness(4.0f);
 	}
 
 	@Override

@@ -3,7 +3,7 @@ package ca.bradj.orecoremin.item;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
-interface OreCoreMinForgeable {
+public interface OreCoreMinForgeable {
 
     //@formatter:off
     Item asDust();

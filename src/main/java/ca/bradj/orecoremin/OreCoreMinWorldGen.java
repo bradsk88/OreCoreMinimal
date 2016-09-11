@@ -29,9 +29,9 @@ public class OreCoreMinWorldGen implements IWorldGenerator {
 				+ DEFAULT_OREGEN_VALUE + " will make it more abundant.");
 		logOreGen(config, logger, "bauxite");
 		logOreGen(config, logger, "bauxiteGravel");
-		logOreGen(config, logger, "copper");
+		logOreGen(config, logger, "copperOre");
 		logOreGen(config, logger, "copperGravel");
-		logOreGen(config, logger, "copperInferior");
+		logOreGen(config, logger, "copperOreInferior");
 		logOreGen(config, logger, "goldGravel");
 		logOreGen(config, logger, "goldInferior");
 		logOreGen(config, logger, "ironGravel");
@@ -47,14 +47,13 @@ public class OreCoreMinWorldGen implements IWorldGenerator {
 
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-		// TODO: Reimplement
-//		switch (world.provider.dimensionId) {
-//			case -1: // nether
-//				return;
-//			case 0: // overworld
-//				new OreCoreMinOverworldGen(config, logger, world, random, chunkX * 16, chunkZ * 16).generate();
-//			case 1: // end
-//				return;
-//		}
+		switch (world.provider.getDimension()) {
+			case -1: // nether
+				return;
+			case 0: // overworld
+				new OreCoreMinOverworldGen(config, logger, world, random, chunkX * 16, chunkZ * 16).generate();
+			case 1: // end
+				return;
+		}
 	}
 }
